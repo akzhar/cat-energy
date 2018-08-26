@@ -1,0 +1,24 @@
+{
+  "name": "catenergy",
+  "version": "1.0.0",
+  "description": "Cat-energy - Интернет магазин кошачьей еды",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "gulp start",
+    "build": "gulp build"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rigger": "^0.5.8"
+  }
+}
