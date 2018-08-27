@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+//= head.html
+
+<body>
+
+//= header.html
+
+  <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <h2 class="form__header">Подбор программы</h2>
+    <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <fieldset class="form__cat-info cat-info">
+      <label class="cat-info__label" for="name">Имя:*</label>
+      <input class="cat-info__input" type="text" name="name" id="name" placeholder="Барсик">
+      <label class="cat-info__label" for="weight">Вес(кг):*</label>
+      <input class="cat-info__input" type="text" name="weight" id="weight" placeholder="7">
+      <label class="cat-info__label" for="age">Возраст(лет):*</label>
+      <input class="cat-info__input" type="text" name="age" id="age" placeholder="7">
+      <input class="cat-info__radio" type="radio" name="program" id="slim">
+      <label class="cat-info__label" for="slim">Похудение</label>
+      <input class="cat-infom__radio" type="radio" name="program" id="muscule">
+      <label class="cat-info__label" for="muscule">Набор массы</label>
+      <input class="cat-info__radio" type="radio" name="program" id="dontknow">
+      <label class="cat-info__label" for="dontknow">Не знаю (нужен ваш совет)</label>
+    </fieldset>
+    <fieldset class="form__contacts-info contacts-info">
+      <legend class="contacts-info__header">Контактные данные (владельца кота)</legend>
+      <label class="contacts-info__label" for="mail">E-mail:*</label>
+      <input class="contacts-info__input" type="mail" name="mail" id="mail" placeholder="Kuklachev@gmail.com">
+      <label class="contacts-info__label" for="tel">Телефон:*</label>
+      <input class="contacts-info__input" type="tel" name="tel" id="tel" placeholder="8(960)900-60-90">
+    </fieldset>
+    <fieldset class="form__comment-info comment-info">
+      <legend class="comment-info__header">Комментарий</legend>
+      <textarea class="comment-info__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+    </fieldset>
+    <fieldset class="form__extra-info extra-info">
+      <legend class="extra-info__header">Дополнительно</legend>
+      <input class="extra-info__checkbox" type="checkbox" name="sugarfree" id="sugarfree" checked>
+      <label class="extra-info__label" for="sugarfree">Сахарозаменитель</label>
+      <input class="extra-info__checkbox" type="checkbox" name="water" id="water">
+      <label class="extra-info__label" for="water">Питьевая вода</label>
+      <input class="extra-info__checkbox" type="checkbox" name="milk" id="milk">
+      <label class="extra-info__label" for="milk">Молоко</label>
+      <input class="extra-info__checkbox" type="checkbox" name="vitamins" id="vitamins">
+      <label class="extra-info__label" for="vitamins">Витамины</label>
+    </fieldset>
+    <input class="form__button button" type="submit" value="Отправить заявку">
+    <span class="form__reminder">*-Обязательные поля</span>
+  </form>
+
+//= footer.html
+
+</body>
+
+</html>
