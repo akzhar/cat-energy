@@ -1,0 +1,32 @@
+.menu-button {
+  position: relative;
+  border: none;
+  background-color: #000000;
+  width: 24px;
+  height: 2px;
+&:hover {
+  cursor: pointer;
+  }
+}
+
+.menu-button::before,
+.menu-button::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.menu-button::before {
+  top: -6px;
+}
+
+.menu-button::after {
+  top: 6px;
+}
+
+
+

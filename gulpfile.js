@@ -5,11 +5,11 @@ var gulp = require("gulp"), //задаем переменные
     plumber = require("gulp-plumber"),
     postcss = require("gulp-postcss"),
     autoprefixer = require("gulp-autoprefixer"),
-    cleanCSS = require('gulp-clean-css'),
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
-    rigger = require('gulp-rigger'),
-    rimraf = require('rimraf'),
+    cleanCSS = require("gulp-clean-css"),
+    imagemin = require("gulp-imagemin"),
+    pngquant = require("imagemin-pngquant"),
+    rigger = require("gulp-rigger"),
+    rimraf = require("rimraf"),
     server = require("browser-sync").create();
 
 var path = {
@@ -19,16 +19,16 @@ var path = {
         image: "build/img/"
     },
     source: { //пути откуда брать исходники для сборки
-        html: 'src/html/blocks/{index,catalog,form}.html', //синтаксис /{index,catalog,form}.html означает - берем файлы с именем index,catalog,form с расширением .html
-        style: 'src/sass/style.scss', //в стилях нам тоже понадобится только main файл
-        image: 'src/img/**/*.*' //синтаксис img/**/*.* означает - взять все файлы всех расширений из папки img и из подпапок
+        html: "src/html/blocks/{index,catalog,form}.html", //синтаксис /{index,catalog,form}.html означает - берем файлы с именем index,catalog,form с расширением .html
+        style: "src/sass/blocks/style.scss", //в стилях нам тоже понадобится только main файл
+        image: "src/img/**/*.*" //синтаксис img/**/*.* означает - взять все файлы всех расширений из папки img и из подпапок
     },
     watch: { //указываем, за изменением каких файлов мы хотим наблюдать
-        html: 'src/html/blocks/**/*.html',
-        style: 'src/sass/blocks/**/*.{scss,sass}',
-        image: 'src/img/**/*.*'
+        html: "src/html/blocks/**/*.html",
+        style: "src/sass/blocks/**/*.{scss,sass}",
+        image: "src/img/**/*.*"
     },
-    clean: 'build' //адрес папки build
+    clean: "build" //адрес папки build
 };
 
 gulp.task("style:build", function () { //задача - вызывается как скрипт из package.json
