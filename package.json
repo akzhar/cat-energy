@@ -7,6 +7,7 @@
   "scripts": {
     "start": "gulp start",
     "css:build": "gulp css:build",
+    "js:build": "gulp js:build",
     "img:build": "gulp img:build",
     "html:build": "gulp html:build",
     "watch": "gulp watch",
@@ -19,6 +20,7 @@
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-imagemin": "^4.1.0",
+    "gulp-jsmin": "^0.1.5",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rigger": "^0.5.8",

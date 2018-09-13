@@ -4,6 +4,7 @@ var gulp = require("gulp"), //задаем переменные
     sass = require("gulp-sass"),
     plumber = require("gulp-plumber"),
     postcss = require("gulp-postcss"),
+    jsmin = require("gulp-jsmin"),
     autoprefixer = require("gulp-autoprefixer"),
     cleanCSS = require("gulp-clean-css"),
     imagemin = require("gulp-imagemin"),
@@ -16,16 +17,19 @@ var path = {
     build: { //пути куда складывать готовые после сборки файлы
         html: "build/",
         style: "build/css/",
+        js: "build/js/",
         image: "build/img/"
     },
     source: { //пути откуда брать исходники для сборки
         html: "src/html/blocks/{index,catalog,form}.html", //синтаксис /{index,catalog,form}.html означает - берем файлы с именем index,catalog,form с расширением .html
-        style: "src/sass/blocks/style.scss", //в стилях нам тоже понадобится только main файл
+        style: "src/sass/blocks/style.scss", //в стилях нам понадобится только main файл
+        js: "src/js/blocks/script.js", //в криптах нам тоже понадобится только main файл
         image: "src/img/**/*.*" //синтаксис img/**/*.* означает - взять все файлы всех расширений из папки img и из подпапок
     },
     watch: { //указываем, за изменением каких файлов мы хотим наблюдать
         html: "src/html/blocks/**/*.html",
         style: "src/sass/blocks/**/*.{scss,sass}",
+        js: "src/js/blocks/**/*.js",
         image: "src/img/**/*.*"
     },
     clean: "build" //адрес папки build
@@ -39,6 +43,14 @@ gulp.task("style:build", function () { //задача - вызывается к�
     .pipe(cleanCSS()) //минификация получившегося css
     .pipe(gulp.dest(path.build.style)) //класть результат сюда
     .pipe(server.stream()) // перезагрузка сборки в браузере
+});
+
+gulp.task('js:build', function () {
+  gulp.src(path.source.js) //источник js
+      .pipe(rigger()) //сборка js из разных файлов
+      .pipe(jsmin()) //Сожмем наш js
+      .pipe(gulp.dest(path.build.js)) //класть результат сюда
+      .pipe(server.stream()) // перезагрузка сборки в браузере
 });
 
 gulp.task("image:build", function () { //задача - вызывается как скрипт из package.json
@@ -67,6 +79,9 @@ gulp.task("watch", function () { //задача - вызывается как с
     gulp.watch([path.watch.image], function(event, cb) { //отслеживание изменений файлов image
         gulp.start("image:build"); //в случае изменений - запуск сборки image
     });
+      gulp.watch([path.watch.js], function(event, cb) { //отслеживание изменений файлов js
+        gulp.start("js:build"); //в случае изменений - запуск сборки js
+    });
     gulp.watch([path.watch.html], function(event, cb) { //отслеживание изменений файлов html
         gulp.start("html:build"); //в случае изменений - запуск сборки html
     });
@@ -76,7 +91,7 @@ gulp.task('clean', function (cb) { //задача - вызывается как 
     rimraf(path.clean, cb); //удаление папки build (предыдущая сборка)
 });
 
-gulp.task ("start",["style:build", "image:build", "html:build", "watch"], function() { //задача - вызывается как скрипт из package.json
+gulp.task ("start",["style:build", "image:build", "js:build", "html:build", "watch"], function() { //задача - вызывается как скрипт из package.json
     server.init({ //вызывается задача build и затем готовая сборка запускается в браузере
       server:"build", //где лежит собранный файл index.html
       notify: false,

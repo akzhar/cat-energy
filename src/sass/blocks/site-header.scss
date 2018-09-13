@@ -1,8 +1,10 @@
 .site-header {
   display: flex;
+  width: 280px;
+  margin: 0 auto;
   min-height: 65px;
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-  outline: 1px solid red;
+  border-bottom: 1px solid #e6e6e6;
 }
