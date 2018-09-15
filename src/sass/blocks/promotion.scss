@@ -1,0 +1,19 @@
+.promotion {
+  position: relative;
+}
+
+.promotion__promo-header {
+  margin: 0 auto;
+}
+
+.promotion__img {
+  position: absolute;
+  top: 165px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.promotion__button {
+  margin: 0 auto;
+  margin-top: 135px;
+}

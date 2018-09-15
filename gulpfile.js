@@ -21,9 +21,9 @@ var path = {
         image: "build/img/"
     },
     source: { //пути откуда брать исходники для сборки
-        html: "src/html/blocks/{index,catalog,form}.html", //синтаксис /{index,catalog,form}.html означает - берем файлы с именем index,catalog,form с расширением .html
-        style: "src/sass/blocks/style.scss", //в стилях нам понадобится только main файл
-        js: "src/js/blocks/script.js", //в криптах нам тоже понадобится только main файл
+        html: "src/html/blocks/**/{index,catalog,form}.html", //синтаксис /{index,catalog,form}.html означает - берем файлы с именем index,catalog,form с расширением .html
+        style: "src/sass/blocks/**/style.scss", //в стилях нам понадобится только main файл
+        js: "src/js/blocks/**/script.js", //в криптах нам тоже понадобится только main файл
         image: "src/img/**/*.*" //синтаксис img/**/*.* означает - взять все файлы всех расширений из папки img и из подпапок
     },
     watch: { //указываем, за изменением каких файлов мы хотим наблюдать

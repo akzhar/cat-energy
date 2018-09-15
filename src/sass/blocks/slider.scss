@@ -1,0 +1,20 @@
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide--active {
+  display: block;
+}
+
+.slide__img {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.slider__checkbox-wrapper {
+  margin-top: 40px;
+  padding-bottom: 38px;
+}

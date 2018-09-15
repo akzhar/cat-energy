@@ -1,6 +1,14 @@
 @import "normalize.min.scss";
 
-@import "page-wrapper.scss";
+@import "var.scss";
+
+@import "body.scss";
+
+@import "section-wrapper.scss";
+
+@import "button.scss";
+
+@import "text.scss";
 
 @import "site-header.scss";
 
@@ -12,3 +20,26 @@
 
 @import "menu-list.scss";
 
+@import "promotion.scss";
+
+@import "promo-header.scss";
+
+@import "diet-list.scss";
+
+@import "diet-item.scss";
+
+@import "section-header.scss";
+
+@import "steps.scss";
+
+@import "steps-list.scss";
+
+@import "example.scss";
+
+@import "facts-list.scss";
+
+@import "fact-item.scss";
+
+@import "slider.scss";
+
+@import "checkbox-wrapper.scss";

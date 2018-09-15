@@ -1,0 +1,10 @@
+.facts-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.facts-list__fact-item:nth-child(odd) {
+  margin-right: 30px;
+}

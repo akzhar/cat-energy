@@ -1,0 +1,23 @@
+.fact-item {
+  position: relative;
+  width: 123px;
+  padding: 16px 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid $border;
+  text-align: center;
+}
+
+.fact-item__description {
+  position: absolute;
+  width: 80px;
+  top: 48px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  background-color: $grey;
+}
