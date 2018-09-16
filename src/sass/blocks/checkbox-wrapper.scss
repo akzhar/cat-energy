@@ -36,7 +36,8 @@
   left: 6px;
   transform: translate(0, -50%);
   background: $green;
-  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+  transition: 0.3s;
   }
 
 &:checked::before {

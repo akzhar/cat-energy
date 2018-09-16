@@ -1,0 +1,30 @@
+.copyright {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__copyright-header {
+  margin: 35px 0;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.copyright__copyright-link {
+  display: block;
+  width: 28px;
+  min-height: 34px;
+  background-image: url("../../img/htmlacademy.png");
+  background-repeat: no-repeat;
+
+&:hover {
+  background-image: url("../../img/htmlacademy.svg copy.png");
+ }
+
+&:active {
+  opacity: 0.3;
+  }
+}
