@@ -7,10 +7,10 @@
 }
 
 .social-link--vk {
-  background-image: url("../../img/m-vk.png");
+  background-image: url("../../img/vk.png");
+  transform: scale(0.75);
 
 &:hover {
-  transform: scale(0.75);
   background-image: url("../../img/vk.svg copy.png");
  }
 
@@ -21,10 +21,10 @@
 }
 
 .social-link--in {
-  background-image: url("../../img/m-insta.png");
+  background-image: url("../../img/insta.png");
+  transform: scale(0.69);
 
 &:hover {
-  transform: scale(0.69);
   background-image: url("../../img/insta.svg copy.png");
  }
 
@@ -35,10 +35,10 @@
 }
 
 .social-link--fb {
-  background-image: url("../../img/m-fb.png");
+  background-image: url("../../img/fb.png");
+  transform: scale(0.69);
 
 &:hover {
-  transform: scale(0.69);
   background-image: url("../../img/fb.svg copy.png");
  }
 

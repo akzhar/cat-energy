@@ -2,8 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
+  width: 320px;
   min-height: 64px;
   background-color: #ffffff;
   border-bottom: 1px solid #e6e6e6;
+}
+
+.site-header__logo-link {
+  margin-left: 20px;
+}
+
+.site-header__menu-button {
+  margin-right: 20px;
 }

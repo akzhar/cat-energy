@@ -1,0 +1,21 @@
+.goods-list {
+  list-style: none;
+  padding: 0;
+}
+
+.goods-item {
+  border-bottom: 1px solid $border;
+}
+
+.goods-item__img {
+  float: left;
+}
+
+.goods-item__goods-description {
+  float: left;
+}
+
+.goods-description__order-button {
+  margin: 0 auto;
+  margin-bottom: 25px;
+}

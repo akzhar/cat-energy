@@ -1,0 +1,39 @@
+.extra-goods {
+  border-bottom: 1px solid $border;
+}
+
+.extra-goods__header {
+  display: block;
+  width: 320px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.extra-goods__explanation {
+  display: block;
+  width: 320px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.extra-goods__button {
+  color: #000000;
+  margin: 0 auto;
+  background-color: $grey;
+  margin-bottom: 24px;
+
+&:hover {
+  background-color: $border;
+  }
+
+&:active {
+  color: rgba(0, 0, 0, 0.3);
+  }
+
+}
