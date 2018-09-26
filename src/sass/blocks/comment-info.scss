@@ -1,0 +1,31 @@
+.comment-info {
+
+}
+
+.comment-info__textarea {
+  resize: none;
+  width: 280px;
+  height: 150px;
+  padding: 14px;
+  text-transform: uppercase;
+  border-color: $border;
+
+    &::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: $inputactive;
+  }
+
+    &::-moz-placeholder {
+    text-transform: uppercase;
+    color: $inputactive;
+  }
+
+    &:hover {
+    border-color: $inputhover;
+  }
+
+    &:active {
+    border-color: $inputactive;
+  }
+
+}

@@ -4,6 +4,8 @@
 
 @import "body.scss";
 
+@import "visually-hidden.scss";
+
 @import "section-wrapper.scss";
 
 @import "button.scss";
@@ -42,7 +44,7 @@
 
 @import "slider.scss";
 
-@import "checkbox-wrapper.scss";
+@import "slider-checkbox-wrapper.scss";
 
 @import "contacts.scss";
 
@@ -69,3 +71,27 @@
 @import "extra-goods.scss";
 
 @import "extra-catalog.scss";
+
+@import "sub-header.scss";
+
+@import "extra-goods-list.scss";
+
+@import "extra-goods-item.scss";
+
+@import "extra-description-table.scss";
+
+@import "stock.scss";
+
+@import "form.scss";
+
+@import "cat-info.scss";
+
+@import "text-input-wrapper.scss";
+
+@import "radio-item.scss";
+
+@import "contacts-info.scss";
+
+@import "comment-info.scss";
+
+@import "checkbox-wrapper.scss";

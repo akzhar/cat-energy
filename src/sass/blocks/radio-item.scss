@@ -1,12 +1,13 @@
-.checkbox-wrapper {
-  margin-bottom: 25px;
+.radio-item {
+  margin: 30px 0;
 }
 
-.checkbox-wrapper__checkbox:focus + .checkbox-wrapper__label::after {
+.radio-item__radio-input:focus + .radio-item__label::after {
   border: 2px solid rgba(77, 144, 254, 0.6);
 }
 
-.checkbox-wrapper__label {
+
+.radio-item__label {
   position: relative;
   font-size: 16px;
   line-height: 18px;
@@ -21,39 +22,38 @@
     position: absolute;
     display: block;
     top: 50%;
+    left: 0;
     transform: translate(0, -50%);
     content: "";
+    border-radius: 50%;
   }
 
   &::before {
-    left: 5px;
-    width: 21px;
-    height: 16px;
-    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    border: 10px solid #ffffff;
   }
 
   &::after {
-    left: 0;
     width: 28px;
     height: 28px;
     border: 1px solid $border;
   }
 
   &:hover::after {
-    border-color: $inputhover;
     cursor: pointer;
-  }
-
-  &:active::before {
-    opacity: 0.3;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
   }
 
   &:active::after {
-    opacity: 0.3;
+    width: 26px;
+    height: 26px;
+    border: 2px solid $green;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
   }
 
 }
 
-.checkbox-wrapper__checkbox:checked + .checkbox-wrapper__label::before {
-  background-image: url("../../img/tick.png");
+.radio-item__radio-input:checked + .radio-item__label::before {
+  background-color: $green;
 }
