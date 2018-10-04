@@ -5,21 +5,29 @@
 
 <body class="body">
 
-  //= site-header.html
+  <header class="site-header">
+    <div class="site-header__header-wrapper header-wrapper">
+    <a class="header-wrapper__logo-link logo-link" href="index.html" aria-label="Ссылка на главную страницу сайта" title="Ссылка на главную страницу сайта">
+    </a>
+    <a class="header-wrapper__shop-name shop-name" href="index.html" title="Ссылка на главную страницу сайта">
+      <b class="shop-name__bold-word">Cat</b> Energy
+    </a>
+    <button class="header-wrapper__menu-button menu-button" aria-label="Кнопка открытия меню сайта" title="Кнопка открытия / закрытия меню сайта"></button>
+    <ul class="header-wrapper__menu-list menu-list">
+      <li class="menu-list__menu-item menu-item">
+        <a href="index.html" class="menu-item__link">Главная</a>
+      </li>
+      <li class="menu-list__menu-item menu-item">
+        <span class="menu-item__link--active">Каталог продукции</span>
+      </li>
+      <li class="menu-list__menu-item menu-item">
+        <a class="menu-item__link" href="form.html">Подбор программы</a>
+      </li>
+    </ul>
+  </div>
+  </header>
 
-  <ul class="menu-list">
-    <li class="menu-list__menu-item menu-item">
-      <a href="index.html" class="menu-item__link">Главная</a>
-    </li>
-    <li class="menu-list__menu-item menu-item">
-      <span class="menu-item__active">Каталог продукции</span>
-    </li>
-    <li class="menu-list__menu-item menu-item">
-      <a class="menu-item__link" href="form.html">Подбор программы</a>
-    </li>
-  </ul>
-
-  <section class="main-catalog section-wrapper">
+  <section class="main-catalog">
     <h2 class="main-catalog__header section-header">Каталог продукции</h2>
     <ul class="main-catalog__goods-list goods-list">
       <li class="goods-list__goods-item goods-item">
@@ -178,7 +186,9 @@
   </section>
 
   <section class="extra-catalog">
-    <h2 class="extra-catalog__header sub-header">Дополнительные товары</h2>
+    <div class="extra-catalog__header-wrapper header-wrapper">
+    <h2 class="header-wrapper__header sub-header">Дополнительные товары</h2>
+    </div>
     <ul class="extra-catalog__extra-goods-list extra-goods-list">
       <li class="extra-goods-list__extra-goods-item extra-goods-item">
         <h3 class="extra-goods-item__header">Сахарозаменитель</h3>
@@ -226,14 +236,14 @@
     </div>
   </section>
 
-  <div class="adressblock adressblock--grey section-wrapper">
+  <div class="adressblock adressblock--grey">
     <div class="adressblock-wrapper">
       <b class="adressblock-wrapper_adressblock__promo">Приглашаем к сотрудничеству диллеров!</b>
       <adress class="adressblock-wrapper_adressblock__adress">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</adress>
     </div>
   </div>
 
-  //= footer.html
+  //= site-footer.html
 
   <script src="../../../js/script.js"></script>
 </body>

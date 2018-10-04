@@ -1,10 +1,19 @@
 .social-buttons-list {
-  width: 320px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 280px;
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid $border;
+  border-bottom: 1px solid $border;
+
+  min-height: 64px; //временно для сетки
+  background: rgba(97, 82, 235, 0.3); //временно для сетки
+  outline: 1px solid rgb(97, 82, 235); //временно для сетки
+}
+
+.social-button-item {
+  background: rgba(194, 87, 87, 0.3); //временно для сетки
+  outline: 1px solid rgb(194, 87, 87); //временно для сетки
 }

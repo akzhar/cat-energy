@@ -1,0 +1,15 @@
+.explanation {
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  background: rgba(232, 21, 119, 0.3); //временно для сетки
+  outline: 1px solid rgb(232, 21, 119); //временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .explanation {
+    width: $tablet-width;
+  }
+}
+

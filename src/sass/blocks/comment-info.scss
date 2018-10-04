@@ -4,11 +4,14 @@
 
 .comment-info__textarea {
   resize: none;
-  width: 280px;
+  width: 252px;
   height: 150px;
   padding: 14px;
   text-transform: uppercase;
   border-color: $border;
+
+  background: rgba(232, 21, 186, 0.3); //временно для сетки
+  outline: 1px solid rgb(232, 21, 186); //временно для сетки
 
     &::-webkit-input-placeholder {
     text-transform: uppercase;

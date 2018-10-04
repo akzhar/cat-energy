@@ -14,6 +14,9 @@
   line-height: 20px;
   border-bottom: 1px dotted #bebebe;
 
+  background: rgba(21, 95, 232, 0.3); //временно для сетки
+  outline: 1px solid rgb(21, 95, 232); //временно для сетки
+
   &:hover {
     cursor: pointer;
     border-bottom: 1px solid #989898;
@@ -36,6 +39,10 @@
   transition: 0.5s;
   position: relative;
   cursor: pointer;
+
+  background: rgba(21, 95, 232, 0.3); //временно для сетки
+  outline: 1px solid rgb(21, 95, 232); //временно для сетки
+
 
   &:focus {
     border: 1px solid rgba(77, 144, 254, 0.6);

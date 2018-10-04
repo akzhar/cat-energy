@@ -1,20 +1,33 @@
 .example {
-  background-color: $grey;
+  width: 280px;
+  margin: 0 auto;
+
+  min-height: 705px; //временно для сетки
+  background: rgba(117, 116, 115, 0.5); //временно для сетки
+  outline: 1px solid rgb(117, 116, 115); //временно для сетки
 }
 
-.example__header {
-  margin: 0 0 30px 20px;
-  padding-top: 15px;
+.example__header, {
+  width: 240px;
+  margin: 0 auto;
+  padding: 15px 0;
+
+  background: rgba(104, 212, 104, 0.3); //временно для сетки
+  outline: 1px solid rgb(104, 212, 104); //временно для сетки
 }
 
 .example__text {
-  width: 266px;
-  margin: 0 auto 30px 20px;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  background: rgba(104, 212, 104, 0.3); //временно для сетки
+  outline: 1px solid rgb(104, 212, 104); //временно для сетки
 }
 
 .example__facts-list {
-  width: 280px;
-  margin: 0 auto;
+  background: rgba(104, 212, 104, 0.3); //временно для сетки
+  outline: 1px solid rgb(104, 212, 104); //временно для сетки
 }
 
 .example__cost {
@@ -26,8 +39,14 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+
+  background: rgba(104, 212, 104, 0.3); //временно для сетки
+  outline: 1px solid rgb(104, 212, 104); //временно для сетки
 }
 
 .example__slider {
   margin-top: 50px;
+
+  background: rgba(104, 212, 104, 0.3); //временно для сетки
+  outline: 1px solid rgb(104, 212, 104); //временно для сетки
 }

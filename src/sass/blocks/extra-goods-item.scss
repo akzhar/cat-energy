@@ -1,5 +1,8 @@
 .extra-goods-item {
   border-top: 1px solid $border;
+
+  background: rgba(38, 232, 21, 0.3); //временно для сетки
+  outline: 1px solid rgb(38, 232, 21); //временно для сетки
 }
 
 .extra-goods-item__header {
@@ -9,8 +12,16 @@
   line-height: 16px;
   text-transform: uppercase;
   font-weight: 400;
+
+  background: rgba(232, 165, 21, 0.3); //временно для сетки
+  outline: 1px solid rgb(232, 165, 21); //временно для сетки
 }
 
 .extra-goods-item__button {
   margin: 15px 0;
+}
+
+.extra-goods-item__extra-description-table {
+  background: rgba(232, 165, 21, 0.3); //временно для сетки
+  outline: 1px solid rgb(232, 165, 21); //временно для сетки
 }

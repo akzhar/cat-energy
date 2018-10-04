@@ -1,17 +1,27 @@
 .form {
+  width: 280px;
+  margin: 0 auto;
 
+  background: rgba(232, 183, 21, 0.3); //временно для сетки
+  outline: 1px solid rgb(232, 183, 21); //временно для сетки
 }
 
 .form__header {
-  margin: 20px;
+  width: 280px;
+  margin: 0 auto;
+  background: rgba(35, 21, 232, 0.3); //временно для сетки
+  outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
 .form__description {
-  width: 230px;
-  margin: 0 0 40px 20px;
+  width: 280px;
+  margin: 20px auto 40px auto;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  background: rgba(35, 21, 232, 0.3); //временно для сетки
+  outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
 .form__cat-info {
@@ -22,9 +32,13 @@
 .form__contacts-info,
 .form__comment-info,
 .form__extra-info {
+  width: 280px;
+  margin: 0 auto;
   padding: 0;
-  padding: 0 20px;
   border: none;
+
+  background: rgba(35, 21, 232, 0.3); //временно для сетки
+  outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
 .form__button {
@@ -33,10 +47,13 @@
 
 .form__reminder {
   display: block;
-  margin-bottom: 35px;
+  padding-bottom: 35px;
   text-align: center;
   color: #444444;
   font-family: Arial;
   font-size: 14px;
   line-height: 16px;
+
+  background: rgba(35, 21, 232, 0.3); //временно для сетки
+  outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }

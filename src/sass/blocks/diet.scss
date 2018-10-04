@@ -1,0 +1,18 @@
+.diet {
+  width: 320px;
+  margin: 0 auto;
+
+  background: rgba(82, 148, 235, 0.5); //временно для сетки
+  outline: 1px solid rgb(82, 148, 235); //временно для сетки
+}
+
+.diet__diet-list {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .diet {
+    width: $tablet-width;
+  }
+}

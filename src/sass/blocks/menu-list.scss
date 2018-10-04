@@ -68,7 +68,6 @@
 }
 
 .menu-item__link {
-  display: block;
   text-decoration: none;
   color: #000000;
 
@@ -82,7 +81,22 @@
 
 }
 
-.menu-item__active {
+.menu-item__link--active {
   padding-bottom: 4px;
   border-bottom: 2px solid $green;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-list {
+    margin: 0;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+
+  .menu-item {
+    border: none;
+    line-height: 25px;
+  }
 }

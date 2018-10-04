@@ -1,14 +1,14 @@
 .social-link {
   display: block;
-  width: 60px;
-  min-height: 60px;
+  width: 64px;
+  height: 64px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .social-link--vk {
   background-image: url("../../img/vk.png");
-  transform: scale(0.75);
+  // transform: scale(0.75);
 
 &:hover {
   background-image: url("../../img/vk.svg copy.png");
@@ -22,7 +22,7 @@
 
 .social-link--in {
   background-image: url("../../img/insta.png");
-  transform: scale(0.69);
+  // transform: scale(0.69);
 
 &:hover {
   background-image: url("../../img/insta.svg copy.png");
@@ -36,7 +36,7 @@
 
 .social-link--fb {
   background-image: url("../../img/fb.png");
-  transform: scale(0.69);
+  // transform: scale(0.69);
 
 &:hover {
   background-image: url("../../img/fb.svg copy.png");

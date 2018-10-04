@@ -1,8 +1,12 @@
 .stock {
   width: 280px;
-  margin: 40px auto;
+  margin: 0 auto;
+  margin-top: 40px;
   min-height: 289px;
   background-image: url("../../img/gift-photo-mobile.jpg");
+
+  background: rgba(232, 165, 21, 0.3); //временно для сетки
+  outline: 1px solid rgb(232, 165, 21); //временно для сетки
 }
 
 .stock__link {
@@ -17,6 +21,9 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+
+  background: rgba(21, 232, 60, 0.3); //временно для сетки
+  outline: 1px solid rgb(21, 232, 60); //временно для сетки
 
   &::before {
     position: absolute;

@@ -1,5 +1,10 @@
 .adressblock {
+  width: 320px;
+  margin: 0 auto;
   padding: 30px 0;
+
+  background: rgba(204, 199, 110, 0.3); //временно для сетки
+  outline: 1px solid rgb(204, 199, 110); //временно для сетки
 }
 
 .adressblock--grey {
@@ -11,6 +16,10 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  background: rgba(225, 232, 21, 0.3); //временно для сетки
+  outline: 1px solid rgb(225, 232, 21); //временно для сетки
+
 }
 
 .adressblock-wrapper_adressblock__promo {
@@ -19,6 +28,9 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 400;
+
+  background: rgba(21, 95, 232, 0.3); //временно для сетки
+  outline: 1px solid rgb(21, 95, 232); //временно для сетки
 }
 
 .adressblock-wrapper_adressblock__adress {
@@ -26,4 +38,7 @@
   font-family: Arial;
   font-size: 14px;
   line-height: 20px;
+
+  background: rgba(21, 95, 232, 0.3); //временно для сетки
+  outline: 1px solid rgb(21, 95, 232); //временно для сетки
 }

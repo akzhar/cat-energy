@@ -1,5 +1,8 @@
 .diet-item {
   background-color: $grey;
+
+  background: rgba(235, 82, 153, 0.3); //временно для сетки
+  outline: 1px solid rgb(235, 82, 153); //временно для сетки
 }
 
 .diet-item__header {
@@ -11,30 +14,33 @@
   line-height: 37px;
   font-weight: 400;
 
-&::before {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 20px;
-  transform: translate(0, -50%);
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-color: $green;
-  border-radius: 50%;
+  background: rgba(212, 235, 82, 0.3); //временно для сетки
+  outline: 1px solid rgb(212, 235, 82); //временно для сетки
+
+  &::before {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: $green;
+    border-radius: 50%;
   }
 
-&::after {
-  position: absolute;
-  display: block;
-  left: 10px;
-  top: 50%;
-  transform: translate(0, -50%);
-  content: "";
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
+  &::after {
+    position: absolute;
+    display: block;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
 }
@@ -53,12 +59,14 @@
   margin: 0 auto;
   padding-bottom: 20px;
   border-bottom: 1px solid $border;
+
+  background: rgba(212, 235, 82, 0.3); //временно для сетки
+  outline: 1px solid rgb(212, 235, 82); //временно для сетки
 }
 
 .diet-item__link {
   position: relative;
   display: block;
-  width: 133px;
   padding: 20px;
   text-decoration: none;
   color: #000000;
@@ -66,25 +74,79 @@
   font-size: 16px;
   line-height: 16px;
 
-&::after {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 120px;
-  transform: translate(0, -50%);
-  content: "";
-  width: 24px;
-  height: 11px;
-  background-image: url("../../img/right-arrow-long.png");
+  background: rgba(212, 235, 82, 0.3); //временно для сетки
+  outline: 1px solid rgb(212, 235, 82); //временно для сетки
+
+  &::after {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 120px;
+    transform: translate(0, -50%);
+    content: "";
+    width: 24px;
+    height: 11px;
+    background-image: url("../../img/right-arrow-long.png");
   }
 
-&:hover::after {
-  width: 33px;
-  background-image: url("../../img/right-arrow-verylong.png");
+  &:hover::after {
+    width: 33px;
+    background-image: url("../../img/right-arrow-verylong.png");
   }
 
-&:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
   }
 
+}
+
+@media (min-width: $tablet-width) {
+  .diet-item__text {
+    width: 380px;
+    border-bottom: none;
+    padding-right: 220px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .diet-item__header {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 68px;
+    padding-left: 0px;
+    font-size: 36px;
+    line-height: 37px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 150%;
+      left: 400px;
+    }
+  }
+
+  .diet-item__header--slim::after {
+    width: 140px;
+    height: 194px;
+    top: 135%;
+    left: 430px;
+    background-image: url("../../img/Vector Smart Object copy 2_tablet.png");
+  }
+
+  .diet-item__header--strong::after {
+    width: 268px;
+    height: 112px;
+    top: 150%;
+    left: 360px;
+    background-image: url("../../img/Vector Smart Object_tablet.png");
+  }
+
+  .diet-item__link {
+    width: 600px;
+    margin: 0 auto;
+    padding: 58px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -1,5 +1,11 @@
 .promotion {
   position: relative;
+  width: 320px;
+  min-height: 480px;
+  margin: 0 auto;
+
+  background: rgba(104, 122, 212, 0.3); //временно для сетки
+  outline: 1px solid rgb(104, 122, 212); //временно для сетки
 }
 
 .promotion__promo-header {
@@ -11,9 +17,20 @@
   top: 165px;
   left: 50%;
   transform: translate(-50%, 0);
+
+  background: rgba(212, 235, 82, 0.3); //временно для сетки
+  outline: 1px solid rgb(212, 235, 82); //временно для сетки
 }
 
-.promotion__button {
-  margin: 0 auto;
-  margin-top: 135px;
+@media (min-width: $tablet-width) {
+  .promotion {
+    width: $tablet-width;
+    min-height: 850px;
+    background: url("../../img/index-can-tablet.png") no-repeat bottom right;
+  }
+
+  .promotion__img {
+    display: none;
+  }
+
 }

@@ -1,6 +1,11 @@
 .section-header {
-  margin: 0 auto;
   font-size: 34px;
   line-height: 60px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .section-header {
+    font-size: 60px;
+  }
 }

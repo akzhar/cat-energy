@@ -1,5 +1,8 @@
 .radio-item {
   margin: 30px 0;
+
+  background: rgba(232, 21, 186, 0.3); //временно для сетки
+  outline: 1px solid rgb(232, 21, 186); //временно для сетки
 }
 
 .radio-item__radio-input:focus + .radio-item__label::after {

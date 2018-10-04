@@ -11,6 +11,7 @@ var gulp = require("gulp"), //задаем переменные
     pngquant = require("imagemin-pngquant"),
     rigger = require("gulp-rigger"),
     rimraf = require("rimraf"),
+    gulpStylelint = require('gulp-stylelint'),
     server = require("browser-sync").create();
 
 var path = {
@@ -34,6 +35,16 @@ var path = {
     },
     clean: "build" //адрес папки build
 };
+
+gulp.task('lint', function lintCssTask() {
+  return gulp
+    .src(path.watch.style) //источник scss
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
+});
 
 gulp.task("style:build", function () { //задача - вызывается как скрипт из package.json
   gulp.src(path.source.style) //источник scss

@@ -1,18 +1,17 @@
 .goods-list {
+  width: 280px;
+  margin: 0 auto;
   list-style: none;
   padding: 0;
+
+  background: rgba(46, 232, 21, 0.3); //временно для сетки
+  outline: 1px solid rgb(46, 232, 21); //временно для сетки
 }
 
 .goods-item {
+  display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid $border;
-}
-
-.goods-item__img {
-  float: left;
-}
-
-.goods-item__goods-description {
-  float: left;
 }
 
 .goods-description__order-button {

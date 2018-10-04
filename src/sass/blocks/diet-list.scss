@@ -1,9 +1,17 @@
 .diet-list {
   list-style: none;
-  width: 280px;
   padding: 0;
+
+  background: rgba(104, 212, 104, 0.3); //временно для сетки
+  outline: 1px solid rgb(104, 212, 104); //временно для сетки
 }
 
 .diet-list__diet-item {
-  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .diet-list {
+    width: 708px;
+  }
 }

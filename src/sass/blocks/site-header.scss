@@ -1,17 +1,33 @@
 .site-header {
+  width: 320px;
+  margin: 0 auto;
+
+  background: rgba(212, 104, 195, 0.3); //временно для сетки
+  outline: 1px solid rgb(212, 104, 19); //временно для сетки
+}
+
+.site-header__header-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  width: 320px;
-  min-height: 64px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e6e6e6;
+  width: 280px;
+  margin: 0 auto;
+  padding: 14px 0;
+
+  background: rgba(82, 148, 235, 0.5); //временно для сетки
+  outline: 1px solid rgb(82, 148, 235); //временно для сетки
 }
 
-.site-header__logo-link {
-  margin-left: 20px;
-}
-
-.site-header__menu-button {
-  margin-right: 20px;
+@media (min-width: $tablet-width) {
+  .site-header {
+    width: $tablet-width;
+  }
+  .header-wrapper {
+    width: 708px;
+    flex-wrap: nowrap;
+  }
+  .header-wrapper__shop-name {
+    display: none;
+  }
 }

@@ -1,4 +1,17 @@
 .social-block {
-  width: 320px;
-  background-color: $grey;
+  width: 280px;
+  margin: 0 auto;
+
+  min-height: 236px; //временно для сетки
+  background: rgba(87, 100, 194, 0.3); //временно для сетки
+  outline: 1px solid rgb(87, 100, 194); //временно для сетки
+}
+
+.social-block__shop-name {
+  display: block;
+  text-align: center;
+  padding: 47px 0;
+
+  background: rgba(185, 87, 194, 0.3); //временно для сетки
+  outline: 1px solid rgb(185, 87, 194); //временно для сетки
 }
