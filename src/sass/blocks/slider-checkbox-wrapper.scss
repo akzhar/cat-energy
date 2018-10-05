@@ -67,3 +67,21 @@
   }
 
 }
+
+.slider-checkbox-wrapper__range-controls {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider-checkbox-wrapper {
+    width: 570px;
+  }
+
+  .slider-checkbox-wrapper__input {
+    display: none;
+  }
+
+  .slider-checkbox-wrapper__range-controls {
+    display: block;
+  }
+}

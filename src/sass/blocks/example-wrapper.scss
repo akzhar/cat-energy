@@ -6,3 +6,9 @@
   background: rgba(232, 21, 119, 0.3); //временно для сетки
   outline: 1px solid rgb(232, 21, 119); //временно для сетки
 }
+
+@media (min-width: $tablet-width) {
+  .example-wrapper {
+    width: $tablet-width;
+  }
+}

@@ -1,23 +1,39 @@
 .contacts {
   position: relative;
   line-height: 0;
+  width: 320px;
+  height: 400px;
+  margin: 0 auto;
+  background-image: url("../../img/map-mobile.png");
+  background-repeat: no-repeat;
 
-&::before {
-  position: absolute;
-  display: block;
-  top: 300px;
-  left: 135px;
-  content: "";
-  width: 55px;
-  height: 53px;
-  background-image: url("../../img/map-pin.png");
+  &::before {
+    position: absolute;
+    display: block;
+    top: 180px;
+    left: 135px;
+    content: "";
+    width: 55px;
+    height: 53px;
+    background-image: url("../../img/map-pin.png");
   }
-
 }
 
 .contacts__iframe {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: $tablet-width;
+    background-image: url("../../img/map-tablet.png");
+
+    &::before {
+      top: 200px;
+      left: 370px;
+    }
+  }
 }

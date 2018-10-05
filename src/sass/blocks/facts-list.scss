@@ -1,10 +1,15 @@
 .facts-list {
+  width: 280px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
 }
 
-.facts-list__fact-item:nth-child(odd) {
-  margin-right: 30px;
+@media (min-width: $tablet-width) {
+  .facts-list {
+    width: 365px;
+  }
 }

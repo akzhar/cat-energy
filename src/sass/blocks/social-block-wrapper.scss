@@ -1,0 +1,13 @@
+.social-block-wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  background: rgba(87, 100, 194, 0.3); //временно для сетки
+  outline: 1px solid rgb(87, 100, 194); //временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .social-block-wrapper {
+    width: $tablet-width;
+  }
+}

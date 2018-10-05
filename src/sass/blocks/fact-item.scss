@@ -24,3 +24,18 @@
   text-transform: lowercase;
   background-color: $grey;
 }
+
+@media (min-width: $tablet-width) {
+  .fact-item {
+    width: 160px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .fact-item__description {
+    width: 140px;
+    top: 60px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

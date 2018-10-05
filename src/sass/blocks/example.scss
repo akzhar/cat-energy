@@ -2,12 +2,11 @@
   width: 280px;
   margin: 0 auto;
 
-  min-height: 705px; //временно для сетки
   background: rgba(117, 116, 115, 0.5); //временно для сетки
   outline: 1px solid rgb(117, 116, 115); //временно для сетки
 }
 
-.example__header, {
+.example__header {
   width: 240px;
   margin: 0 auto;
   padding: 15px 0;
@@ -25,28 +24,34 @@
   outline: 1px solid rgb(104, 212, 104); //временно для сетки
 }
 
-.example__facts-list {
-  background: rgba(104, 212, 104, 0.3); //временно для сетки
-  outline: 1px solid rgb(104, 212, 104); //временно для сетки
-}
-
-.example__cost {
-  display: block;
-  width: 280px;
-  margin: 0 auto;
-  margin-top: 40px;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-
-  background: rgba(104, 212, 104, 0.3); //временно для сетки
-  outline: 1px solid rgb(104, 212, 104); //временно для сетки
-}
-
 .example__slider {
   margin-top: 50px;
 
   background: rgba(104, 212, 104, 0.3); //временно для сетки
   outline: 1px solid rgb(104, 212, 104); //временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: 708px;
+  }
+
+  .example__header {
+    width: 708px;
+    padding: 40px 0;
+  }
+
+  .example__text {
+    width: 680px;
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__slider {
+    position: relative;
+    background-color: #eaeaea;
+    margin-top: 250px;
+    min-height: 430px;
+  }
 }

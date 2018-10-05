@@ -42,3 +42,28 @@
   background: rgba(21, 95, 232, 0.3); //временно для сетки
   outline: 1px solid rgb(21, 95, 232); //временно для сетки
 }
+
+@media (min-width: $tablet-width) {
+  .adressblock {
+    width: $tablet-width;
+  }
+
+  .adressblock-wrapper {
+    width: 625px;
+  }
+
+  .adressblock-wrapper_adressblock__promo {
+    width: 152px;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 100px 0;
+  }
+
+  .adressblock-wrapper_adressblock__adress {
+    width: 152px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    padding: 100px 0;
+  }
+}
