@@ -1,4 +1,11 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Oswald";
+  font-style: normal;
+  src: url("../fonts/Oswald-Regular.ttf") format("ttf");
+}
+
 .body {
-  min-width: 320px;
+  // min-width: 320px;
   font-family: 'Oswald', Arial, sans-serif;
 }

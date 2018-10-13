@@ -26,14 +26,14 @@
   display: block;
   width: 28px;
   height: 34px;
-  background-image: url("../../img/htmlacademy.png");
+  background-image: url("../img/htmlacademy.png");
 
   background: rgba(184, 235, 82, 0.3); //временно для сетки
   outline: 1px solid rrgb(184, 235, 82); //временно для сетки
 
 
   &:hover {
-  background-image: url("../../img/htmlacademy.svg copy.png");
+  background-image: url("../img/htmlacademy.svg copy.png");
  }
 
   &:active {

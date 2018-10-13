@@ -2,6 +2,7 @@
   font-family: Arial;
   font-size: 12px;
   line-height: 16px;
+  border-collapse: collapse;
 }
 
 .table-row__table-cell {
@@ -10,4 +11,18 @@
 
 .table-row__table-cell--col2 {
   text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .description-table {
+    width: 250px;
+    margin: 25px auto 30px auto;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .table-row__table-cell {
+    padding: 8px 0;
+    border-bottom: 1px solid $border;
+  }
 }

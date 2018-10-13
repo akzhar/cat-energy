@@ -70,7 +70,7 @@
 
 @import "copyright.scss";
 
-@import "main-catalog.scss";
+@import "main-catalog-wrapper.scss";
 
 @import "goods-list.scss";
 
@@ -80,9 +80,7 @@
 
 @import "extra-goods.scss";
 
-@import "header-wrapper.scss";
-
-@import "extra-catalog.scss";
+@import "extra-catalog-wrapper.scss";
 
 @import "sub-header.scss";
 
@@ -108,6 +106,8 @@
 
 @import "comment-info.scss";
 
-@import "extra-info.scss";
-
 @import "checkbox-wrapper.scss";
+
+@import "button-wrapper.scss";
+
+@import "extra-questions.scss";

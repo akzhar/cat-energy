@@ -47,11 +47,11 @@
 
 .diet-item__header--slim::after {
   top: 45%;
-  background-image: url("../../img/Vector Smart Object.png");
+  background-image: url("../img/Vector Smart Object.png");
 }
 
 .diet-item__header--strong::after {
-  background-image: url("../../img/Vector Smart Object copy 2.png");
+  background-image: url("../img/Vector Smart Object copy 2.png");
 }
 
 .diet-item__text {
@@ -86,12 +86,12 @@
     content: "";
     width: 24px;
     height: 11px;
-    background-image: url("../../img/right-arrow-long.png");
+    background-image: url("../img/right-arrow-long.png");
   }
 
   &:hover::after {
     width: 33px;
-    background-image: url("../../img/right-arrow-verylong.png");
+    background-image: url("../img/right-arrow-verylong.png");
   }
 
   &:active {
@@ -131,7 +131,7 @@
     height: 194px;
     top: 135%;
     left: 430px;
-    background-image: url("../../img/Vector Smart Object copy 2_tablet.png");
+    background-image: url("../img/Vector Smart Object copy 2_tablet.png");
   }
 
   .diet-item__header--strong::after {
@@ -139,7 +139,7 @@
     height: 112px;
     top: 150%;
     left: 360px;
-    background-image: url("../../img/Vector Smart Object_tablet.png");
+    background-image: url("../img/Vector Smart Object_tablet.png");
   }
 
   .diet-item__link {

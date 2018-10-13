@@ -1,7 +1,3 @@
-.comment-info {
-
-}
-
 .comment-info__textarea {
   resize: none;
   width: 252px;
@@ -31,4 +27,11 @@
     border-color: $inputactive;
   }
 
+}
+
+@media (min-width: $tablet-width) {
+  .comment-info__textarea {
+    width: 600px;
+    margin-left: 40px;
+  }
 }

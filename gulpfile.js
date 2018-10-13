@@ -19,11 +19,13 @@ var path = {
         html: "build/",
         style: "build/css/",
         js: "build/js/",
+        fonts: "build/fonts/",
         image: "build/img/"
     },
     source: { //пути откуда брать исходники для сборки
         html: "src/html/blocks/**/{index,catalog,form}.html", //синтаксис /{index,catalog,form}.html означает - берем файлы с именем index,catalog,form с расширением .html
         style: "src/sass/blocks/**/style.scss", //в стилях нам понадобится только main файл
+        fonts: "src/fonts/*.*",
         js: "src/js/blocks/**/script.js", //в криптах нам тоже понадобится только main файл
         image: "src/img/**/*.*" //синтаксис img/**/*.* означает - взять все файлы всех расширений из папки img и из подпапок
     },
@@ -35,6 +37,12 @@ var path = {
     },
     clean: "build" //адрес папки build
 };
+
+gulp.task("fonts:build", function () { //задача - вызывается как скрипт из package.json
+  gulp.src(path.source.fonts) //источник scss
+  .pipe(gulp.dest(path.build.fonts)) //класть результат сюда
+  .pipe(server.stream()) // перезагрузка сборки в браузере
+});
 
 gulp.task('lint', function lintCssTask() {
   return gulp

@@ -1,14 +1,9 @@
 .cat-info {
-  width: 280px;
-  margin: 0 auto;
-
   background: rgba(35, 21, 232, 0.3); //временно для сетки
   outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
 .cat-info__text-input-wrapper {
-  width: 280px;
-  margin: 0 auto;
   margin-bottom: 14px;
 
   background: rgba(88, 232, 21, 0.3); //временно для сетки
@@ -22,4 +17,15 @@
 
   background: rgba(88, 232, 21, 0.3); //временно для сетки
   outline: 1px solid rgb(88, 232, 21); //временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .cat-info  {
+    width: 628px;
+    margin: 0 auto;
+  }
+  .cat-info__radio-input-wrapper {
+  border: 1px solid $border;
+  margin-top: 60px;
+}
 }

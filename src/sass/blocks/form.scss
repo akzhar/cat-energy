@@ -2,19 +2,17 @@
   width: 280px;
   margin: 0 auto;
 
-  background: rgba(232, 183, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 183, 21); //временно для сетки
+  background: rgba(152, 183, 21, 0.3); //временно для сетки
+  outline: 1px solid rgb(152, 183, 21); //временно для сетки
 }
 
 .form__header {
-  width: 280px;
   margin: 0 auto;
   background: rgba(35, 21, 232, 0.3); //временно для сетки
   outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
 .form__description {
-  width: 280px;
   margin: 20px auto 40px auto;
   font-size: 14px;
   line-height: 18px;
@@ -31,8 +29,7 @@
 
 .form__contacts-info,
 .form__comment-info,
-.form__extra-info {
-  width: 280px;
+.form__extra-questions  {
   margin: 0 auto;
   padding: 0;
   border: none;
@@ -41,19 +38,14 @@
   outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
-.form__button {
-  margin: 20px;
-}
-
-.form__reminder {
-  display: block;
-  padding-bottom: 35px;
-  text-align: center;
-  color: #444444;
-  font-family: Arial;
-  font-size: 14px;
-  line-height: 16px;
-
-  background: rgba(35, 21, 232, 0.3); //временно для сетки
-  outline: 1px solid rgb(35, 21, 232); //временно для сетки
+@media (min-width: $tablet-width) {
+  .form {
+    width: 708px;
+  }
+  .form__description {
+    width: 340px;
+    margin: 50px auto 70px 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

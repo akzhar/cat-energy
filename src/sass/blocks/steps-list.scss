@@ -31,19 +31,19 @@
 }
 
 .step-item--leave::before {
-  background-image: url("../../img/advantage-1.png");
+  background-image: url("../img/advantage-1.png");
 }
 
 .step-item--powder::before {
-  background-image: url("../../img/advantage-2.png");
+  background-image: url("../img/advantage-2.png");
 }
 
 .step-item--tableware::before {
-  background-image: url("../../img/advantage-3.png");
+  background-image: url("../img/advantage-3.png");
 }
 
 .step-item--clock::before {
-  background-image: url("../../img/advantage-4.png");
+  background-image: url("../img/advantage-4.png");
 }
 
 @media (min-width: $tablet-width) {

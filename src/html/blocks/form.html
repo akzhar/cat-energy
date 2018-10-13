@@ -13,7 +13,7 @@
       <b class="shop-name__bold-word">Cat</b> Energy
     </a>
     <button class="header-wrapper__menu-button menu-button" aria-label="Кнопка открытия меню сайта" title="Кнопка открытия / закрытия меню сайта"></button>
-    <ul class="header-wrapper__menu-list menu-list">
+    <ul class="header-wrapper__menu-list menu-list menu-list--nojs">
       <li class="menu-list__menu-item menu-item">
         <a href="index.html" class="menu-item__link">Главная</a>
       </li>
@@ -28,7 +28,7 @@
   </header>
 
   <form class="form-wrapper" action="https://echo.htmlacademy.ru" method="post">
-    <div class="form-wrapper__form">
+    <div class="form-wrapper__form form">
     <h2 class="form__header section-header">Подбор программы</h2>
     <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <fieldset class="form__cat-info cat-info">
@@ -74,8 +74,9 @@
         <legend class="comment-info__header sub-header">Комментарий</legend>
         <textarea class="comment-info__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
       </fieldset>
-      <fieldset class="form__extra-info extra-info">
-        <legend class="extra-info__header sub-header">Дополнительно</legend>
+      <fieldset class="form__extra-questions extra-questions">
+        <legend class="extra-questions__header sub-header">Дополнительно</legend>
+        <div class="extra-questions__extra-info extra-info">
         <div class="extra-info__checkbox-wrapper checkbox-wrapper">
           <input class="checkbox-wrapper__checkbox visually-hidden" type="checkbox" name="sugarfree" id="sugarfree" checked>
           <label class="checkbox-wrapper__label" for="sugarfree">Сахарозаменитель</label>
@@ -92,9 +93,12 @@
           <input class="checkbox-wrapper__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
           <label class="checkbox-wrapper__label" for="vitamins">Витамины</label>
         </div>
+      </div>
       </fieldset>
-      <input class="form__button button" type="submit" value="Отправить заявку">
-      <span class="form__reminder">* —  Обязательные поля</span>
+      <div class="form__button-wrapper button-wrapper">
+      <input class="button-wrapper__button button" type="submit" value="Отправить заявку">
+      <span class="button-wrapper__reminder">* —  Обязательные поля</span>
+    </div>
     </div>
     </form>
 
@@ -107,7 +111,7 @@
 
     //= site-footer.html
 
-    <script src="../../../js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 
   </html>

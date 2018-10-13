@@ -1,0 +1,11 @@
+.extra-questions {
+  background: rgba(35,21,232,.3); //для сетки
+  outline: 1px solid #2315e8; //для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .extra-questions__extra-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

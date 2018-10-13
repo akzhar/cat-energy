@@ -2,6 +2,7 @@
   font-family: Arial;
   font-size: 12px;
   line-height: 16px;
+  border-collapse: collapse;
 }
 
 .extra-table-row__extra-table-cell {
@@ -10,4 +11,21 @@
 
 .extra-table-row__extra-table-cell--col2 {
   text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-description-table  {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 60px
+  }
+
+  .extra-table-row__extra-table-cell {
+    padding: 25px 0;
+    text-align: right;
+  }
+
+  .extra-table-row__extra-table-cell--col2 {
+    width: 96px;
+  }
 }

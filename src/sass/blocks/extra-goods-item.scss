@@ -25,3 +25,28 @@
   background: rgba(232, 165, 21, 0.3); //временно для сетки
   outline: 1px solid rgb(232, 165, 21); //временно для сетки
 }
+
+@media (min-width: $tablet-width) {
+ .extra-goods-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.extra-goods-item__header {
+  width: 350px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: auto;
+  padding: 25px 0;
+}
+
+.extra-goods-item__extra-description-table {
+  margin-right: auto;
+}
+
+.extra-goods-item__button {
+  width: 648px;
+  margin: 0 auto 30px auto;
+}
+}
+

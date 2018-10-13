@@ -1,8 +1,8 @@
 .goods-description {
   width: 140px;
 
-  background: rgba(232, 21, 119, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 21, 119); //временно для сетки
+  background: rgba(132, 21, 119, 0.3); //временно для сетки
+  outline: 1px solid rgb(132, 21, 119); //временно для сетки
 }
 
 .goods-description__header {
@@ -17,7 +17,17 @@
   outline: 1px solid rgb(232, 183, 21); //временно для сетки
 }
 
-.goods-description__description-table {
-  background: rgba(232, 183, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 183, 21); //временно для сетки
+@media (min-width: $tablet-width) {
+  .goods-description {
+    margin-top: 165px;
+    width: 100%;
+  }
+
+  .goods-description__header {
+    width: 130px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
 }

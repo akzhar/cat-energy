@@ -57,5 +57,12 @@
 }
 
 .checkbox-wrapper__checkbox:checked + .checkbox-wrapper__label::before {
-  background-image: url("../../img/tick.png");
+  background-image: url("../img/tick.png");
+}
+
+@media (min-width: $tablet-width) {
+ .checkbox-wrapper {
+  width: 290px;
+  padding-left: 40px;
+ }
 }

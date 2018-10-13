@@ -1,10 +1,15 @@
 .extra-goods {
+  margin-top: 80px;
   border-bottom: 1px solid $border;
+
+  background: rgba(104, 122, 212, 0.3); //временно для сетки
+  outline: 1px solid rgb(104, 122, 212); //временно для сетки
 }
 
 .extra-goods__header {
+  position: relative;
   display: block;
-  width: 320px;
+  width: 280px;
   margin-bottom: 10px;
   text-align: center;
   font-size: 16px;
@@ -14,11 +19,29 @@
 
   background: rgba(232, 183, 21, 0.3); //временно для сетки
   outline: 1px solid rgb(232, 183, 21); //временно для сетки
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $border;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    left: calc(50% - 15px);
+  }
 }
 
 .extra-goods__explanation {
   display: block;
-  width: 320px;
+  width: 280px;
   margin-bottom: 20px;
   text-align: center;
   font-family: Arial;
@@ -31,16 +54,51 @@
 
 .extra-goods__button {
   color: #000000;
-  margin: 0 auto;
   background-color: $grey;
   margin-bottom: 24px;
 
-&:hover {
-  background-color: $border;
+  &:hover {
+    background-color: $border;
   }
 
-&:active {
-  color: rgba(0, 0, 0, 0.3);
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-goods {
+    display: block;
+    height: auto;
+    margin-top: 140px;
+    box-sizing: border-box;
+    border: 1px solid $grey;
   }
 
+  .extra-goods__header {
+    width: 140px;
+    margin: 165px auto 25px auto;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before,
+    &::after {
+      top: -80px;
+      width: 60px;
+    }
+
+    &::before {
+      left: calc(50% - 30px);
+    }
+  }
+
+  .extra-goods__explanation {
+    width: 175px;
+    margin: 0 auto 85px auto;
+    font-size: 16px;
+  }
+
+  .extra-goods__button {
+    margin: 0 auto 40px auto;
+  }
 }

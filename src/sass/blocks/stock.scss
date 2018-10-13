@@ -1,9 +1,7 @@
 .stock {
-  width: 280px;
-  margin: 0 auto;
   margin-top: 40px;
-  min-height: 289px;
-  background-image: url("../../img/gift-photo-mobile.jpg");
+  min-height: 290px;
+  background-image: url("img/gift-photo-mobile.jpg");
 
   background: rgba(232, 165, 21, 0.3); //временно для сетки
   outline: 1px solid rgb(232, 165, 21); //временно для сетки
@@ -25,6 +23,10 @@
   background: rgba(21, 232, 60, 0.3); //временно для сетки
   outline: 1px solid rgb(21, 232, 60); //временно для сетки
 
+  & br {
+    display: none;
+  }
+
   &::before {
     position: absolute;
     display: block;
@@ -34,8 +36,29 @@
     transform: translate(-50%, 0);
     width: 55px;
     min-height: 60px;
-    background-image: url("../../img/gift.png");
+    background-image: url("../img/gift.png");
     background-repeat: no-repeat;
   }
+}
 
+@media (min-width: $tablet-width) {
+  .stock {
+    background-image: url("img/gift-photo-tablet.jpg");
+  }
+
+  .stock__link {
+    width: 200px;
+    padding: 115px 0 115px 300px;
+    text-align: left;
+
+    & br {
+      display: inline;
+    }
+
+    &::before {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    }
+  }
 }

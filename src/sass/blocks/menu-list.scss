@@ -55,6 +55,10 @@
   line-height: 20px;
 }
 
+.menu-list--nojs {
+  display: block;
+}
+
 .menu-list--open { //для открытия меню
   display: block;
   animation-name: slideInDown, fadeIn;
