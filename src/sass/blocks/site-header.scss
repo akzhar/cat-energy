@@ -31,3 +31,12 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    width: $desktop-width;
+  }
+  .header-wrapper {
+    width: 1220px;
+  }
+}

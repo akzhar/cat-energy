@@ -97,3 +97,19 @@
  }
 
 }
+
+@media (min-width: $desktop-width) {
+  .steps-list {
+    width: 1220px;
+  }
+
+  .step-item {
+    width: 200px;
+    padding-right: 45px;
+    margin-right: 80px;
+  }
+
+  .step-item:nth-child(4n) {
+    margin-right: 0;
+  }
+}

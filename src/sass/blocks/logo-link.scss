@@ -26,3 +26,13 @@
     outline: 1px solid rgb(82, 235, 110); //временно для сетки
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo-link {
+    width: 202px;
+    height: 59px;
+    background-image: url("../img/logo-desktop.png");
+
+    outline: 1px solid rgb(82, 235, 110); //временно для сетки
+  }
+}

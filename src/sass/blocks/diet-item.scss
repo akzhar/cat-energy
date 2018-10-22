@@ -1,5 +1,6 @@
 .diet-item {
   background-color: $grey;
+  margin-bottom: 20px;
 
   background: rgba(235, 82, 153, 0.3); //временно для сетки
   outline: 1px solid rgb(235, 82, 153); //временно для сетки
@@ -8,7 +9,7 @@
 .diet-item__header {
   position: relative;
   margin: 0;
-  padding: 30px 0 32px 90px;
+  padding: 32px 0 32px 90px;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
@@ -149,4 +150,61 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .diet-item {
+    width: 570px;
+  }
+
+  .diet-item__header {
+    width: 370px;
+    padding: 75px 0 75px 200px;
+
+  &::before {
+    top: 50%;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+  }
+
+  &::after {
+    left: 30px;
+    top: 50%;
+    width: 140px;
+    height: 100px;
+  }
+
+}
+
+.diet-item__header--slim::after {
+  top: 45%;
+  background-image: url("../img/cat-slim.png");
+}
+
+.diet-item__header--strong::after {
+  background-image: url("../img/cat-pro.png");
+}
+
+.diet-item__text {
+  width: 470px;
+  padding:0 50px;
+
+  background: rgba(212, 235, 82, 0.3); //временно для сетки
+  outline: 1px solid rgb(212, 235, 82); //временно для сетки
+}
+
+.diet-item__link {
+  width: 500px;
+  padding: 20px;
+  padding-left: 50px;
+  margin-bottom: 40px;
+
+  background: rgba(212, 235, 82, 0.3); //временно для сетки
+  outline: 1px solid rgb(212, 235, 82); //временно для сетки
+
+  &::after {
+    left: 170px;
+  }
+}
 }

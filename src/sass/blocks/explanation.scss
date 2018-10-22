@@ -13,3 +13,9 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .explanation {
+    width: $desktop-width;
+  }
+}
+

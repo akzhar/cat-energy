@@ -71,5 +71,16 @@
     left: 0;
     transform: none;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .promo-header {
+    width: 720px;
+    padding-top: 90px;
+    padding-left: 190px;
+  }
+
+  .promo-header__button {
+    padding: 17px 0;
+  }
 }

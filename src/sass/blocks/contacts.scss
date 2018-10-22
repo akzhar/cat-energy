@@ -4,7 +4,7 @@
   width: 320px;
   height: 400px;
   margin: 0 auto;
-  background-image: url("../img/map-mobile.png");
+  background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
 
   &::before {
@@ -29,7 +29,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: $tablet-width;
-    background-image: url("../img/map-tablet.png");
+    background-image: url("../img/map-tablet.jpg");
 
     &::before {
       top: 200px;

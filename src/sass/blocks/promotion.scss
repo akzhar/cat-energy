@@ -20,6 +20,11 @@
 
   background: rgba(212, 235, 82, 0.3); //временно для сетки
   outline: 1px solid rgb(212, 235, 82); //временно для сетки
+
+  width: 280px;
+  height: 270px;
+  background-image: url("../img/index-can-mobile.png");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,5 +37,28 @@
   .promotion__img {
     display: none;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .promotion {
+    width: $desktop-width;
+    background-image: url("../img/index-can.png");
+    background-position: 560px 0;
+    min-height: 590px;
+  }
+
+  .promotion__promo-header {
+    margin: 0;
+  }
+
+  .promotion__img {
+    display: block;
+    width: 720px;
+    height: 696px;
+    top: -105px;
+    right: 0;
+    transform: translate(0, 0);
+    background: url("../img/index-background-desktop.jpg");
+    z-index: -1;
+  }
 }

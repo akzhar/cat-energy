@@ -6,13 +6,15 @@
   outline: 1px solid rgb(82, 148, 235); //временно для сетки
 }
 
-.diet__diet-list {
-  width: 280px;
-  margin: 0 auto;
-}
-
 @media (min-width: $tablet-width) {
   .diet {
     width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .diet {
+    margin-top: 80px;
+    width: $desktop-width;
   }
 }

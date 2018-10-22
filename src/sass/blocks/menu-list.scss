@@ -104,3 +104,20 @@
     line-height: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .menu-list {
+    width: 480px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .menu-item__link--active {
+    border-color: #ffffff;
+  }
+
+  .menu-item__link {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}
