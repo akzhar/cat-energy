@@ -1,8 +1,9 @@
 .social-block {
   width: 280px;
   margin: 0 auto;
-  background: rgba(287, 100, 194, 0.3); //временно для сетки
-  outline: 1px solid rgb(287, 100, 194); //временно для сетки
+
+  // background: rgba(287, 100, 194, 0.3); //временно для сетки
+  // outline: 1px solid rgb(287, 100, 194); //временно для сетки
 }
 
 .social-block__shop-name {
@@ -10,8 +11,8 @@
   text-align: center;
   padding: 47px 0;
 
-  background: rgba(185, 87, 194, 0.3); //временно для сетки
-  outline: 1px solid rgb(185, 87, 194); //временно для сетки
+  // background: rgba(185, 87, 194, 0.3); //временно для сетки
+  // outline: 1px solid rgb(185, 87, 194); //временно для сетки
 }
 
 @media (min-width: $tablet-width) {
@@ -21,5 +22,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-block {
+    width: 1220px;
   }
 }

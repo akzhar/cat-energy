@@ -1,10 +1,10 @@
 .stock {
   margin-top: 40px;
-  min-height: 290px;
-  background-image: url("img/gift-photo-mobile.jpg");
+  background-image: url("../img/gift-photo-mobile.jpg");
+  // min-height: 290px;
 
-  background: rgba(232, 165, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 165, 21); //временно для сетки
+  // background: rgba(232, 165, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 165, 21); //временно для сетки
 }
 
 .stock__link {
@@ -20,8 +20,8 @@
   line-height: 20px;
   text-align: center;
 
-  background: rgba(21, 232, 60, 0.3); //временно для сетки
-  outline: 1px solid rgb(21, 232, 60); //временно для сетки
+  // background: rgba(21, 232, 60, 0.3); //временно для сетки
+  // outline: 1px solid rgb(21, 232, 60); //временно для сетки
 
   & br {
     display: none;
@@ -43,12 +43,13 @@
 
 @media (min-width: $tablet-width) {
   .stock {
-    background-image: url("img/gift-photo-tablet.jpg");
+    background-image: url("../img/gift-photo-tablet.jpg");
+    margin-bottom: 70px;
   }
 
   .stock__link {
     width: 200px;
-    padding: 115px 0 115px 300px;
+    padding: 70px 0 70px 300px;
     text-align: left;
 
     & br {
@@ -59,6 +60,25 @@
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .stock {
+    background-image: url("../img/gift-photo-desktop.jpg");
+    margin: 0;
+    width: 245px;
+  }
+
+  .stock__link {
+    width: 100%;
+    padding: 190px 0 0 0;
+    text-align: center;
+
+    &::before {
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
     }
   }
 }

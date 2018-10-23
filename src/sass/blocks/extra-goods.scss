@@ -1,9 +1,10 @@
 .extra-goods {
   margin-top: 80px;
   border-bottom: 1px solid $border;
+  background-color: #ffffff;
 
-  background: rgba(104, 122, 212, 0.3); //временно для сетки
-  outline: 1px solid rgb(104, 122, 212); //временно для сетки
+  // background: rgba(104, 122, 212, 0.3); //временно для сетки
+  // outline: 1px solid rgb(104, 122, 212); //временно для сетки
 }
 
 .extra-goods__header {
@@ -17,8 +18,8 @@
   text-transform: uppercase;
   font-weight: 400;
 
-  background: rgba(232, 183, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 183, 21); //временно для сетки
+  // background: rgba(232, 183, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 183, 21); //временно для сетки
 
   &::before,
   &::after {
@@ -48,8 +49,8 @@
   font-size: 12px;
   line-height: 16px;
 
-  background: rgba(232, 183, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 183, 21); //временно для сетки
+  // background: rgba(232, 183, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 183, 21); //временно для сетки
 }
 
 .extra-goods__button {
@@ -101,4 +102,10 @@
   .extra-goods__button {
     margin: 0 auto 40px auto;
   }
+}
+
+@media (min-width: $desktop-width) {
+.extra-goods__button {
+  width: 170px;
+}
 }

@@ -17,7 +17,6 @@
   .extra-description-table  {
     font-size: 16px;
     line-height: 20px;
-    margin-left: 60px
   }
 
   .extra-table-row__extra-table-cell {
@@ -27,5 +26,19 @@
 
   .extra-table-row__extra-table-cell--col2 {
     width: 96px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-table-row__extra-table-cell {
+    text-align: left;
+  }
+
+  .extra-table-row__extra-table-cell--col1 {
+    width: 240px;
+  }
+
+    .extra-table-row__extra-table-cell--col2 {
+    width: 45px;
   }
 }

@@ -2,14 +2,14 @@
   width: 280px;
   margin: 0 auto;
 
-  background: rgba(152, 183, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(152, 183, 21); //временно для сетки
+  // background: rgba(152, 183, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(152, 183, 21); //временно для сетки
 }
 
 .form__header {
   margin: 0 auto;
-  background: rgba(35, 21, 232, 0.3); //временно для сетки
-  outline: 1px solid rgb(35, 21, 232); //временно для сетки
+  // background: rgba(35, 21, 232, 0.3); //временно для сетки
+  // outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
 .form__description {
@@ -18,8 +18,8 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  background: rgba(35, 21, 232, 0.3); //временно для сетки
-  outline: 1px solid rgb(35, 21, 232); //временно для сетки
+  // background: rgba(35, 21, 232, 0.3); //временно для сетки
+  // outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
 .form__cat-info {
@@ -34,8 +34,8 @@
   padding: 0;
   border: none;
 
-  background: rgba(35, 21, 232, 0.3); //временно для сетки
-  outline: 1px solid rgb(35, 21, 232); //временно для сетки
+  // background: rgba(35, 21, 232, 0.3); //временно для сетки
+  // outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
 @media (min-width: $tablet-width) {
@@ -47,5 +47,14 @@
     margin: 50px auto 70px 40px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 1220px;
+  }
+  .form__description {
+    margin-left: 0;
   }
 }

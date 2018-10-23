@@ -26,3 +26,9 @@
     border-bottom: 1px solid $border;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .description-table {
+    width: 170px;
+  }
+}

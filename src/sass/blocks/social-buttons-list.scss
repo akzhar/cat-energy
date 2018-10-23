@@ -8,12 +8,18 @@
   margin: 0;
   border-bottom: 1px solid $border;
 
-  min-height: 64px; //временно для сетки
-  background: rgba(97, 82, 235, 0.3); //временно для сетки
-  outline: 1px solid rgb(97, 82, 235); //временно для сетки
+  // min-height: 64px; //временно для сетки
+  // background: rgba(97, 82, 235, 0.3); //временно для сетки
+  // outline: 1px solid rgb(97, 82, 235); //временно для сетки
 }
 
 .social-button-item {
-  background: rgba(194, 87, 87, 0.3); //временно для сетки
-  outline: 1px solid rgb(194, 87, 87); //временно для сетки
+  // background: rgba(194, 87, 87, 0.3); //временно для сетки
+  // outline: 1px solid rgb(194, 87, 87); //временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .social-buttons-list {
+    border-bottom: none;
+  }
 }

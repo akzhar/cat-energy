@@ -2,8 +2,8 @@
   background-color: $grey;
   margin-bottom: 20px;
 
-  background: rgba(235, 82, 153, 0.3); //временно для сетки
-  outline: 1px solid rgb(235, 82, 153); //временно для сетки
+  // background: rgba(235, 82, 153, 0.3); //временно для сетки
+  // outline: 1px solid rgb(235, 82, 153); //временно для сетки
 }
 
 .diet-item__header {
@@ -15,8 +15,8 @@
   line-height: 37px;
   font-weight: 400;
 
-  background: rgba(212, 235, 82, 0.3); //временно для сетки
-  outline: 1px solid rgb(212, 235, 82); //временно для сетки
+  // background: rgba(212, 235, 82, 0.3); //временно для сетки
+  // outline: 1px solid rgb(212, 235, 82); //временно для сетки
 
   &::before {
     position: absolute;
@@ -61,8 +61,8 @@
   padding-bottom: 20px;
   border-bottom: 1px solid $border;
 
-  background: rgba(212, 235, 82, 0.3); //временно для сетки
-  outline: 1px solid rgb(212, 235, 82); //временно для сетки
+  // background: rgba(212, 235, 82, 0.3); //временно для сетки
+  // outline: 1px solid rgb(212, 235, 82); //временно для сетки
 }
 
 .diet-item__link {
@@ -75,8 +75,8 @@
   font-size: 16px;
   line-height: 16px;
 
-  background: rgba(212, 235, 82, 0.3); //временно для сетки
-  outline: 1px solid rgb(212, 235, 82); //временно для сетки
+  // background: rgba(212, 235, 82, 0.3); //временно для сетки
+  // outline: 1px solid rgb(212, 235, 82); //временно для сетки
 
   &::after {
     position: absolute;
@@ -152,7 +152,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .diet-item {
     width: 570px;
   }
@@ -190,18 +190,18 @@
   width: 470px;
   padding:0 50px;
 
-  background: rgba(212, 235, 82, 0.3); //временно для сетки
-  outline: 1px solid rgb(212, 235, 82); //временно для сетки
+  // background: rgba(212, 235, 82, 0.3); //временно для сетки
+  // outline: 1px solid rgb(212, 235, 82); //временно для сетки
 }
 
 .diet-item__link {
   width: 500px;
   padding: 20px;
   padding-left: 50px;
-  margin-bottom: 40px;
+  margin: 20px 0;
 
-  background: rgba(212, 235, 82, 0.3); //временно для сетки
-  outline: 1px solid rgb(212, 235, 82); //временно для сетки
+  // background: rgba(212, 235, 82, 0.3); //временно для сетки
+  // outline: 1px solid rgb(212, 235, 82); //временно для сетки
 
   &::after {
     left: 170px;

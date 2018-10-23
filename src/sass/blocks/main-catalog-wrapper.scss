@@ -3,21 +3,21 @@
   margin: 0 auto;
   margin-top: 20px;
 
-  background: rgba(212, 104, 195, 0.3); //временно для сетки
-  outline: 1px solid rgb(212, 104, 19); //временно для сетки
+  // background: rgba(212, 104, 195, 0.3); //временно для сетки
+  // outline: 1px solid rgb(212, 104, 19); //временно для сетки
 }
 
 .main-catalog {
   width: 280px;
   margin: 0 auto;
 
-  background: rgba(252, 104, 195, 0.3); //временно для сетки
-  outline: 1px solid rgb(252, 104, 19); //временно для сетки
+  // background: rgba(252, 104, 195, 0.3); //временно для сетки
+  // outline: 1px solid rgb(252, 104, 19); //временно для сетки
 }
 
 .main-catalog__header {
-  background: rgba(104, 22, 12, 0.3); //временно для сетки
-  outline: 1px solid rgb(104, 22, 12); //временно для сетки
+  // background: rgba(104, 22, 12, 0.3); //временно для сетки
+  // outline: 1px solid rgb(104, 22, 12); //временно для сетки
 }
 
 @media (min-width: $tablet-width) {
@@ -27,6 +27,17 @@
 
   .main-catalog {
     width: 708px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog-wrapper {
+    width: $desktop-width;
+  }
+
+  .main-catalog {
+    width: 1220px;
   }
 
 }

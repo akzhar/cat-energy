@@ -1,13 +1,18 @@
 .cat-info {
-  background: rgba(35, 21, 232, 0.3); //временно для сетки
-  outline: 1px solid rgb(35, 21, 232); //временно для сетки
+  // background: rgba(35, 21, 232, 0.3); //временно для сетки
+  // outline: 1px solid rgb(35, 21, 232); //временно для сетки
+}
+
+.cat-info__text-input-wrapper-outer {
+  // background: rgba(88, 232, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(88, 232, 21); //временно для сетки
 }
 
 .cat-info__text-input-wrapper {
   margin-bottom: 14px;
 
-  background: rgba(88, 232, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(88, 232, 21); //временно для сетки
+  // background: rgba(88, 232, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(88, 232, 21); //временно для сетки
 }
 
 .cat-info__radio-input-wrapper {
@@ -15,8 +20,8 @@
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
 
-  background: rgba(88, 232, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(88, 232, 21); //временно для сетки
+  // background: rgba(88, 232, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(88, 232, 21); //временно для сетки
 }
 
 @media (min-width: $tablet-width) {
@@ -25,7 +30,26 @@
     margin: 0 auto;
   }
   .cat-info__radio-input-wrapper {
-  border: 1px solid $border;
-  margin-top: 60px;
+    border: 1px solid $border;
+    margin-top: 60px;
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .cat-info  {
+    width: 1220px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cat-info__text-input-wrapper-outer {
+    width: 570px;
+  }
+
+  .cat-info__radio-input-wrapper {
+    width: 570px;
+    margin: 0;
+    padding-left: 30px;
+  }
 }

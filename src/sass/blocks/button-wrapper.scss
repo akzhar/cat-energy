@@ -1,6 +1,6 @@
 .button-wrapper {
-  background: rgba(235, 211, 122, 0.3); //временно для сетки
-  outline: 1px solid rgb(235, 211, 122); //временно для сетки
+  // background: rgba(235, 211, 122, 0.3); //временно для сетки
+  // outline: 1px solid rgb(235, 211, 122); //временно для сетки
 }
 
 .button-wrapper__button {
@@ -16,8 +16,8 @@
   font-size: 14px;
   line-height: 16px;
 
- background: rgba(35, 21, 232, 0.3); //временно для сетки
- outline: 1px solid rgb(35, 21, 232); //временно для сетки
+ // background: rgba(35, 21, 232, 0.3); //временно для сетки
+ // outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
 @media (min-width: $tablet-width) {
@@ -26,11 +26,21 @@
     align-items: center;
   }
   .button-wrapper__button {
-   margin: 20px 60px 50px 30px;
+   margin: 20px 60px 50px 40px;
  }
  .button-wrapper__reminder {
   margin: 20px auto 50px 0px;
   padding: 0;
   font-size: 16px;
 }
+}
+
+@media (min-width: $desktop-width) {
+  .button-wrapper {
+    margin-top: 30px;
+  }
+  .button-wrapper__button {
+   width: 570px;
+   margin-right: 80px;
+ }
 }

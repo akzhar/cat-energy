@@ -2,12 +2,18 @@
   width: 320px;
   margin: 0 auto;
 
-  background: rgba(232, 32, 121, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 32, 121); //временно для сетки
+  // background: rgba(232, 32, 121, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 32, 121); //временно для сетки
 }
 
 @media (min-width: $tablet-width) {
   .form-wrapper {
     width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-wrapper {
+    width: $desktop-width;
   }
 }

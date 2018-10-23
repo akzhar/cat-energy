@@ -3,12 +3,18 @@
   margin: 0 auto;
   background-color: $grey;
 
-  background: rgba(110, 204, 116, 0.3); //временно для сетки
-  outline: 1px solid rgb(110, 204, 116); //временно для сетки
+  // background: rgba(110, 204, 116, 0.3); //временно для сетки
+  // outline: 1px solid rgb(110, 204, 116); //временно для сетки
 }
 
 @media (min-width: $tablet-width) {
   .site-footer {
     width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-footer {
+    width: $desktop-width;
   }
 }

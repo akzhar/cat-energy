@@ -12,8 +12,8 @@
   position: relative;
   padding-left: 80px;
 
-  background: rgba(21, 38, 232, 0.3); //временно для сетки
-  outline: 1px solid rgb(21, 38, 232); //временно для сетки
+  // background: rgba(21, 38, 232, 0.3); //временно для сетки
+  // outline: 1px solid rgb(21, 38, 232); //временно для сетки
 
 
   &::before {
@@ -104,9 +104,25 @@
   }
 
   .step-item {
-    width: 200px;
-    padding-right: 45px;
+    width: 245px;
     margin-right: 80px;
+    box-sizing: border-box;
+  }
+
+  .step-item--leave {
+    padding-right: 40px;
+  }
+
+  .step-item--powder {
+    padding-right: 20px;
+  }
+
+  .step-item--tableware {
+    padding-right: 25px;
+  }
+
+  .step-item--clock {
+    padding-right: 0;
   }
 
   .step-item:nth-child(4n) {

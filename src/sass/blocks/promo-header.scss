@@ -3,7 +3,7 @@
   min-height: 305px;
   background: url("../img/index-background-mobile.jpg");
 
-  outline: 1px solid rgb(55, 35, 255); //временно для сетки
+  // outline: 1px solid rgb(55, 35, 255); //временно для сетки
 }
 
 .promo-header__header {
@@ -16,8 +16,8 @@
   text-align: center;
   font-weight: 400;
 
-  background: rgba(212, 235, 82, 0.3); //временно для сетки
-  outline: 1px solid rgb(212, 235, 82);; //временно для сетки
+  // background: rgba(212, 235, 82, 0.3); //временно для сетки
+  // outline: 1px solid rgb(212, 235, 82);; //временно для сетки
 }
 
 .promo-header__tagline {
@@ -29,8 +29,8 @@
   text-align: center;
   text-transform: uppercase;
 
-  background: rgba(212, 235, 82, 0.3); //временно для сетки
-  outline: 1px solid rgb(212, 235, 82);; //временно для сетки
+  // background: rgba(212, 235, 82, 0.3); //временно для сетки
+  // outline: 1px solid rgb(212, 235, 82);; //временно для сетки
 }
 
 .promo-header__button {
@@ -75,7 +75,7 @@
 
 @media (min-width: $desktop-width) {
   .promo-header {
-    width: 720px;
+    width: 530px;
     padding-top: 90px;
     padding-left: 190px;
   }

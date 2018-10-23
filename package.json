@@ -15,7 +15,8 @@
     "fonts:build": "gulp fonts:build",
     "lint": "gulp style:lint"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
@@ -30,6 +31,7 @@
     "gulp-stylelint": "^7.0.0",
     "imagemin-pngquant": "^6.0.0",
     "rimraf": "^2.6.2",
-    "stylelint": "^9.5.0"
+    "stylelint": "^9.5.0",
+    "dev-ip": "^1.0.1"
   }
 }

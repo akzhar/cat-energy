@@ -3,8 +3,8 @@
   margin: 0 auto;
   background-color: $grey;
 
-  background: rgba(232, 21, 119, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 21, 119); //временно для сетки
+  // background: rgba(232, 21, 119, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 21, 119); //временно для сетки
 }
 
 @media (min-width: $tablet-width) {
@@ -12,3 +12,11 @@
     width: $tablet-width;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example-wrapper {
+    margin-top: 140px;
+    width: $desktop-width;
+  }
+}
+

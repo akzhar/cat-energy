@@ -1,8 +1,8 @@
 .extra-goods-item {
   border-top: 1px solid $border;
 
-  background: rgba(38, 232, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(38, 232, 21); //временно для сетки
+  // background: rgba(38, 232, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(38, 232, 21); //временно для сетки
 }
 
 .extra-goods-item__header {
@@ -13,8 +13,8 @@
   text-transform: uppercase;
   font-weight: 400;
 
-  background: rgba(232, 165, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 165, 21); //временно для сетки
+  // background: rgba(232, 165, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 165, 21); //временно для сетки
 }
 
 .extra-goods-item__button {
@@ -22,8 +22,8 @@
 }
 
 .extra-goods-item__extra-description-table {
-  background: rgba(232, 165, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(232, 165, 21); //временно для сетки
+  // background: rgba(232, 165, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 165, 21); //временно для сетки
 }
 
 @media (min-width: $tablet-width) {
@@ -42,11 +42,33 @@
 
 .extra-goods-item__extra-description-table {
   margin-right: auto;
+  margin-left: 60px
 }
 
 .extra-goods-item__button {
   width: 648px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 }
 
+@media (min-width: $desktop-width) {
+ .extra-goods-item {
+  flex-wrap: nowrap;
+  margin-left: auto;
+}
+
+.extra-goods-item__header {
+  width: 245px;
+  margin-left: 0;
+}
+
+.extra-goods-item__extra-description-table {
+  margin-left: 80px;
+}
+
+.extra-goods-item__button {
+  margin: 15px 0;
+  width: 245px;
+}
+}

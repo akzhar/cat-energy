@@ -37,3 +37,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: $desktop-width;
+    background-image: url("../img/map.jpg");
+
+    &::before {
+      top: 200px;
+      left: 1040px;
+    }
+  }
+}

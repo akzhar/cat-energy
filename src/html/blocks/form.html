@@ -31,7 +31,8 @@
     <div class="form-wrapper__form form">
     <h2 class="form__header section-header">Подбор программы</h2>
     <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-    <fieldset class="form__cat-info cat-info">
+    <div class="form__cat-info cat-info">
+      <div class="cat-info__text-input-wrapper-outer">
       <div class="cat-info__text-input-wrapper text-input-wrapper">
         <label class="text-input-wrapper__label" for="name">Имя:*</label>
         <input class="text-input-wrapper__text-input" type="text" name="name" id="name" placeholder="Барсик" title="Введите имя Вашего котейки">
@@ -44,6 +45,7 @@
         <label class="text-input-wrapper__label" for="age">Возраст(лет):*</label>
         <input class="text-input-wrapper__text-input" type="text" name="age" id="age" placeholder="7" title="Введите возраст Вашего котейки">
       </div>
+    </div>
       <div class="cat-info__radio-input-wrapper radio-input-wrapper">
         <div class="radio-input-wrapper__radio-item radio-item">
           <input class="radio-item__radio-input visually-hidden" type="radio" name="program" id="slim" checked>
@@ -58,9 +60,11 @@
           <label class="radio-item__label"</ for="dontknow">Не знаю (нужен ваш совет)
           </label>
         </div>
-      </fieldset>
-      <fieldset class="form__contacts-info contacts-info">
-        <legend class="contacts-info__header sub-header">Контактные данные (владельца кота)</legend>
+      </div>
+      </div>
+      <div class="form__contacts-info contacts-info">
+        <h2 class="contacts-info__header sub-header">Контактные данные (владельца кота)</h2>
+        <div class="contacts-info__text-input-wrapper-outer">
         <div class="contacts-info__text-input-wrapper text-input-wrapper text-input-wrapper--mail">
           <label class="text-input-wrapper__label" for="mail">Email:*</label>
           <input class="text-input-wrapper__text-input" type="mail" name="mail" id="mail" placeholder="Kuklachev@gmail.com" title="Введите Ваш E-mail">
@@ -69,13 +73,14 @@
           <label class="text-input-wrapper__label" for="tel">Телефон:*</label>
           <input class="text-input-wrapper__text-input" type="tel" name="tel" id="tel" placeholder="8(960)900-60-90" title="Введите Ваш телефон">
         </div>
-      </fieldset>
-      <fieldset class="form__comment-info comment-info">
-        <legend class="comment-info__header sub-header">Комментарий</legend>
+      </div>
+      </div>
+      <div class="form__comment-info comment-info">
+        <h2 class="comment-info__header sub-header">Комментарий</h2>
         <textarea class="comment-info__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
-      </fieldset>
-      <fieldset class="form__extra-questions extra-questions">
-        <legend class="extra-questions__header sub-header">Дополнительно</legend>
+      </div>
+      <div class="form__extra-questions extra-questions">
+        <h2 class="extra-questions__header sub-header">Дополнительно</h2>
         <div class="extra-questions__extra-info extra-info">
         <div class="extra-info__checkbox-wrapper checkbox-wrapper">
           <input class="checkbox-wrapper__checkbox visually-hidden" type="checkbox" name="sugarfree" id="sugarfree" checked>
@@ -94,7 +99,7 @@
           <label class="checkbox-wrapper__label" for="vitamins">Витамины</label>
         </div>
       </div>
-      </fieldset>
+      </div>
       <div class="form__button-wrapper button-wrapper">
       <input class="button-wrapper__button button" type="submit" value="Отправить заявку">
       <span class="button-wrapper__reminder">* —  Обязательные поля</span>
@@ -102,7 +107,7 @@
     </div>
     </form>
 
-    <div class="adressblock adressblock--grey">
+    <div class="adressblock adressblock--form">
       <div class="adressblock-wrapper">
         <b class="adressblock-wrapper_adressblock__promo">Приглашаем к сотрудничеству диллеров!</b>
         <adress class="adressblock-wrapper_adressblock__adress">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</adress>

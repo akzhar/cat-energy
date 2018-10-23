@@ -2,8 +2,8 @@
   list-style: none;
   padding: 0;
 
-  background: rgba(46, 232, 21, 0.3); //временно для сетки
-  outline: 1px solid rgb(46, 232, 21); //временно для сетки
+  // background: rgba(46, 232, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(46, 232, 21); //временно для сетки
 }
 
 .goods-item {
@@ -108,5 +108,23 @@
 
   .goods-item__img--7 {
     background-image: url("../../img/catalog-7-tablet.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item {
+    width: 245px;
+  }
+
+  .goods-item:nth-child(odd) {
+    margin-right: 80px;
+  }
+
+   .goods-item {
+    margin-right: 80px;
+  }
+
+   .goods-item:nth-child(4n) {
+    margin-right: 0;
   }
 }

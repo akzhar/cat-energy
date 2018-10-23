@@ -14,6 +14,9 @@ var gulp = require("gulp"), //задаем переменные
     gulpStylelint = require('gulp-stylelint'),
     server = require("browser-sync").create();
 
+var devip = require('dev-ip');
+devip(); // [ "192.168.1.76", "192.168.1.80" ] or false if nothing found (ie, offline user)
+
 var path = {
     build: { //пути куда складывать готовые после сборки файлы
         html: "build/",
@@ -110,12 +113,13 @@ gulp.task('clean', function (cb) { //задача - вызывается как 
     rimraf(path.clean, cb); //удаление папки build (предыдущая сборка)
 });
 
-gulp.task ("start",["style:build", "image:build", "js:build", "html:build", "watch"], function() { //задача - вызывается как скрипт из package.json
+gulp.task ("start",["style:build", "fonts:build", "image:build", "js:build", "html:build", "watch"], function() { //задача - вызывается как скрипт из package.json
     server.init({ //вызывается задача build и затем готовая сборка запускается в браузере
       server:"build", //где лежит собранный файл index.html
       notify: false,
       open: true,
       cors: true,
+      host: "192.168.0.91",
       ui: false
     });
 });

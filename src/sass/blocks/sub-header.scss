@@ -26,10 +26,21 @@
     font-size: 36px;
     line-height: 36px;
     padding: 75px 0;
+    text-align: center;
 
     &::after {
       width: $tablet-width;
       left: -30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sub-header {
+
+    &::after {
+      width: $desktop-width;
+      left: -110px;
     }
   }
 }
