@@ -1,0 +1,150 @@
+.steps-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.steps-list__step-item {
+  margin-bottom: 20px;
+}
+
+.step-item {
+  position: relative;
+  padding-left: 80px;
+
+  // background: rgba(21, 38, 232, 0.3); //временно для сетки
+  // outline: 1px solid rgb(21, 38, 232); //временно для сетки
+
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+    background-repeat: no-repeat;
+  }
+}
+
+.step-item--leave::before {
+  background-image: url("../img/sprites.png");
+  background-position: -520px 8px;
+}
+
+.step-item--powder::before {
+  background-image: url("../img/sprites.png");
+  background-position: -590px -70px;
+}
+
+.step-item--tableware::before {
+  background-image: url("../img/sprites.png");
+  background-position: -595px 5px;
+}
+
+.step-item--clock::before {
+  background-image: url("../img/sprites.png");
+  background-position: -590px -145px;
+}
+
+@media (min-width: $tablet-width) {
+  .steps-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .step-item {
+    padding-left: 0;
+    padding: 120px 0;
+    width: 224px;
+    padding-right: 130px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 0;
+      transform: none;
+    }
+
+    &::after {
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      top: -35px;
+      left: 100px;
+      font-family: Oswald;
+      transform: none;
+      z-index: -1;
+    }
+  }
+
+  .step-item--leave::before {
+    background-position: -510px 14px;
+  }
+
+  .step-item--powder::before {
+    background-position: -580px -64px;
+  }
+
+  .step-item--tableware::before {
+    background-position: -585px 15px;
+  }
+
+  .step-item--clock::before {
+    background-position: -580px -135px;
+  }
+
+  .step-item:nth-child(1)::after {
+   content: "1";
+ }
+
+ .step-item:nth-child(2)::after {
+   content: "2";
+ }
+
+ .step-item:nth-child(3)::after {
+   content: "3";
+ }
+
+ .step-item:nth-child(4)::after {
+   content: "4";
+ }
+
+}
+
+@media (min-width: $desktop-width) {
+  .steps-list {
+    width: 1220px;
+  }
+
+  .step-item {
+    width: 245px;
+    margin-right: 80px;
+    box-sizing: border-box;
+  }
+
+  .step-item--leave {
+    padding-right: 40px;
+  }
+
+  .step-item--powder {
+    padding-right: 20px;
+  }
+
+  .step-item--tableware {
+    padding-right: 25px;
+  }
+
+  .step-item--clock {
+    padding-right: 0;
+  }
+
+  .step-item:nth-child(4n) {
+    margin-right: 0;
+  }
+}

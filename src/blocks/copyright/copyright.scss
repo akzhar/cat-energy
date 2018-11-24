@@ -1,0 +1,48 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // background: rgba(194, 87, 87, 0.3); //временно для сетки
+  // outline: 1px solid rgb(194, 87, 87); //временно для сетки
+}
+
+.copyright__copyright-header {
+  margin: 0;
+  padding: 30px 0;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  font-weight: 400;
+
+  display: block; //временно для сетки
+  min-width: 140px; //временно для сетки
+  // background: rgba(69, 196, 73, 0.3); //временно для сетки
+  // outline: 1px solid rgb(69, 196, 73); //временно для сетки
+}
+
+.copyright__copyright-link {
+  display: block;
+  width: 28px;
+  height: 34px;
+  background-image: url("../img/sprites.png");
+  background-position: -343px -116px;
+  width: 27px;
+  height: 34px;
+
+  // background: rgba(184, 235, 82, 0.3); //временно для сетки
+  // outline: 1px solid rrgb(184, 235, 82); //временно для сетки
+
+
+  &:hover {
+  background-image: url("../img/sprites.png");
+  background-position: -376px -116px;
+  width: 27px;
+  height: 34px;
+ }
+
+  &:active {
+  opacity: 0.3;
+  }
+}

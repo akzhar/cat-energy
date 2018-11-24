@@ -1,3 +1,0 @@
-//= menubutton.js
-
-//= slider.js

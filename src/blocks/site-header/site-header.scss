@@ -1,0 +1,65 @@
+.site-header {
+  width: 320px;
+  margin: 0 auto;
+
+  // background: rgba(212, 104, 195, 0.3); //временно для сетки
+  // outline: 1px solid rgb(212, 104, 19); //временно для сетки
+}
+
+.site-header__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 14px 0;
+
+  // background: rgba(82, 148, 235, 0.5); //временно для сетки
+  // outline: 1px solid rgb(82, 148, 235); //временно для сетки
+}
+
+.site-header--catalog .menu-item__link--catalog,
+.site-header--form .menu-item__link--form,
+.site-header--index .menu-item__link--index { //на странице news у элемента news
+  pointer-events: none; //отключаем событие клика
+  cursor: default; //курсор обычный при наведении
+
+  padding-bottom: 4px;
+  border-bottom: 2px solid $green;
+}
+
+@media (min-width: $tablet-width) {
+  .site-header {
+    width: $tablet-width;
+  }
+  .site-header__header-wrapper {
+    width: 708px;
+    flex-wrap: nowrap;
+  }
+  .site-header .shop-name {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    width: $desktop-width;
+  }
+  .site-header__header-wrapper {
+    width: 1220px;
+  }
+
+  .site-header--index .menu-list {
+    color: #ffffff;
+  }
+
+  .site-header--index .menu-item__link--active {
+    border-color: #ffffff;
+  }
+
+  .site-header--index .menu-item__link {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}
