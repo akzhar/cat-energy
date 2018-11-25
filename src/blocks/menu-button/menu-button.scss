@@ -1,73 +1,68 @@
-.menu-button {
+.menu-button { //кнопка открытия меню
   position: relative;
+
+  width: 24px; //размеры кнопки открытия меню
+  height: 24px;
+
   border: none;
-  background-color: #000000;
-  width: 24px;
-  height: 2px;
+
+  background-color: transparent;
 
   &:hover {
     cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(198, 210, 222, 0.3));
   }
 
-  &:hover,
-  &:hover::before,
-  &:hover::after {
+  &:active {
     opacity: 0.6;
   }
 
-  &:active,
-  &:active::before,
-  &:active::after {
-    opacity: 0.3;
-  }
-
-  &::before,
+  &::before, //иконка бургера
   &::after {
     position: absolute;
-    left: 0;
-    display: block;
-    content: "";
-    width: 24px;
-    height: 2px;
+    left: 50%;
+    transform: translate(-50%, 0); //центруется
+
+    width: 24px; //размеры полосок бургера
+    height: 3px;
+
     background-color: #000000;
+
+    content: "";
   }
 
-  &::before {
-    top: -6px;
-    border-bottom: 3px solid #ffffff;
+  &::before { //верхняя полоска бургера
+    top: 0; //отступ сверху
+    box-shadow: 0px 11px 0px 0px #000000; //3ая средняя полоска бургера
   }
 
-  &::after {
-    top: 3px;
-    border-top: 3px solid #ffffff;
+  &::after { //нижняя полоска бургера
+    bottom: 0; //отступ снизу
   }
-
 }
 
-.menu-button--menu-open { //вид кнопки когда меню открыто
-  background-color: transparent;
-  height: 20px;
+.menu-button--menu-open { //кнопка открытия меню когда меню открыто
 
-  &::before,
-  &::after {
-    top: 9px;
-    border: 0;
+  &::before { //верхняя полоска бургера
+    top: 10px; //смещается вниз
+    transform: translate(-50%, 0) rotate(-45deg); //центруется и поворачивается
+
+    transition: 0.5s; //плавно
+
+    box-shadow: none; //3ая средняя полоска исчезает
   }
 
-  &::before {
-    transform: rotate(45deg);
-  }
+  &::after { //нижняя полоска бургера
+    bottom: 10px; //смещается вверх
+    transform: translate(-50%, 0) rotate(45deg); //центруется и поворачивается
 
-  &::after {
-    transform: rotate(-45deg);
+    transition: 0.5s; //плавно
   }
-
 }
 
-@media (min-width: $tablet-width) {
+
+@media (min-width: $tablet-width) { //если viewport шире width-1
   .menu-button {
     display: none;
   }
 }
-
-
