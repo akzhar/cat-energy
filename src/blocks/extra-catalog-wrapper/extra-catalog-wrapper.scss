@@ -44,4 +44,9 @@
   .extra-catalog {
     width: 1220px;
   }
+
+  .extra-catalog__extra-goods-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

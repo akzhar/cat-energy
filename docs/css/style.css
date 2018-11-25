@@ -483,27 +483,23 @@ template {
   width: 320px;
   margin: 0 auto; }
 
-@media (min-width: 768px) {
-  .diet {
-    width: 768px; } }
-
-@media (min-width: 1440px) {
-  .diet {
-    margin-top: 80px;
-    width: 1440px; } }
-
-.diet-list {
+.diet__list {
   width: 280px;
   margin: 0 auto;
   list-style: none;
   padding: 0; }
 
 @media (min-width: 768px) {
-  .diet-list {
+  .diet {
+    width: 768px; }
+  .diet__list {
     width: 708px; } }
 
 @media (min-width: 1440px) {
-  .diet-list {
+  .diet {
+    margin-top: 80px;
+    width: 1440px; }
+  .diet__list {
     width: 1220px;
     display: flex;
     flex-wrap: wrap;
@@ -821,15 +817,6 @@ template {
   margin: 0 auto;
   background-color: #f2f2f2; }
 
-@media (min-width: 768px) {
-  .example-wrapper {
-    width: 768px; } }
-
-@media (min-width: 1440px) {
-  .example-wrapper {
-    margin-top: 140px;
-    width: 1440px; } }
-
 .example {
   width: 280px;
   margin: 0 auto; }
@@ -844,10 +831,12 @@ template {
   margin: 0 auto;
   margin-bottom: 30px; }
 
-.example__slider {
+.example .slider {
   margin-top: 50px; }
 
 @media (min-width: 768px) {
+  .example-wrapper {
+    width: 768px; }
   .example {
     width: 708px; }
   .example__header {
@@ -858,13 +847,16 @@ template {
     margin-left: 0;
     font-size: 16px;
     line-height: 24px; }
-  .example__slider {
+  .example .slider {
     position: relative;
     width: 708px;
     margin-top: 250px;
     min-height: 430px; } }
 
 @media (min-width: 1440px) {
+  .example-wrapper {
+    margin-top: 140px;
+    width: 1440px; }
   .example {
     position: relative;
     width: 1220px; }
@@ -875,7 +867,7 @@ template {
   .example__text {
     padding-top: 75px;
     width: 420px; }
-  .example__slider {
+  .example .slider {
     position: absolute;
     top: 0;
     right: 0;
@@ -895,28 +887,6 @@ template {
   line-height: 20px;
   text-align: center; }
 
-@media (min-width: 768px) {
-  .facts-list-wrapper__cost-wrapper {
-    width: 175px;
-    margin: 7px 0;
-    margin-left: auto;
-    text-align: right;
-    font-size: 20px;
-    line-height: 20px; }
-  .facts-list-wrapper__cost {
-    display: block;
-    margin: 6px 0; } }
-
-@media (min-width: 1440px) {
-  .facts-list-wrapper {
-    width: 365px; }
-  .facts-list-wrapper__cost-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 60px;
-    text-align: center; } }
-
 .facts-list {
   width: 280px;
   margin: 0;
@@ -925,10 +895,6 @@ template {
   justify-content: space-between;
   list-style: none;
   padding: 0; }
-
-@media (min-width: 768px) {
-  .facts-list {
-    width: 365px; } }
 
 .fact-item {
   position: relative;
@@ -954,6 +920,18 @@ template {
   background-color: #f2f2f2; }
 
 @media (min-width: 768px) {
+  .facts-list-wrapper__cost-wrapper {
+    width: 175px;
+    margin: 7px 0;
+    margin-left: auto;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px; }
+  .facts-list-wrapper__cost {
+    display: block;
+    margin: 6px 0; }
+  .facts-list {
+    width: 365px; }
   .fact-item {
     width: 160px;
     font-size: 30px;
@@ -963,6 +941,16 @@ template {
     top: 60px;
     font-size: 14px;
     line-height: 14px; } }
+
+@media (min-width: 1440px) {
+  .facts-list-wrapper {
+    width: 365px; }
+  .facts-list-wrapper__cost-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center; } }
 
 .slide {
   width: 280px;
@@ -1230,23 +1218,11 @@ template {
   .site-footer {
     width: 1440px; } }
 
-.social-block-wrapper {
-  width: 320px;
-  margin: 0 auto; }
-
-@media (min-width: 768px) {
-  .social-block-wrapper {
-    width: 768px; } }
-
-@media (min-width: 1440px) {
-  .social-block-wrapper {
-    width: 1440px; } }
-
 .social-block {
   width: 280px;
   margin: 0 auto; }
 
-.social-block__shop-name {
+.social-block .shop-name {
   display: block;
   text-align: center;
   padding: 47px 0; }
@@ -1273,43 +1249,43 @@ template {
   margin: 0;
   border-bottom: 1px solid #e6e6e6; }
 
-@media (min-width: 768px) {
-  .social-buttons-list {
-    border-bottom: none; } }
-
-.social-link {
+.social-button-item__link {
   display: block;
   width: 64px;
   height: 64px;
   background-position: center;
   background-repeat: no-repeat; }
 
-.social-link--vk {
+.link--vk {
   background-image: url("../img/sprites.png");
   background-position: -518px -70px; }
-  .social-link--vk:hover {
+  .link--vk:hover {
     background-image: url("../img/sprites.png");
     background-position: -519px -143px; }
-  .social-link--vk:active {
+  .link--vk:active {
     opacity: 0.3; }
 
-.social-link--in {
+.link--in {
   background-image: url("../img/sprites.png");
   background-position: -520px -278px; }
-  .social-link--in:hover {
+  .link--in:hover {
     background-image: url("../img/sprites.png");
     background-position: -591px -278px; }
-  .social-link--in:active {
+  .link--in:active {
     opacity: 0.3; }
 
-.social-link--fb {
+.link--fb {
   background-image: url("../img/sprites.png");
   background-position: -520px -216px; }
-  .social-link--fb:hover {
+  .link--fb:hover {
     background-image: url("../img/sprites.png");
     background-position: -590px -216px; }
-  .social-link--fb:active {
+  .link--fb:active {
     opacity: 0.3; }
+
+@media (min-width: 768px) {
+  .social-buttons-list {
+    border-bottom: none; } }
 
 .copyright {
   display: flex;
@@ -1606,7 +1582,10 @@ template {
   .extra-catalog-wrapper {
     width: 1440px; }
   .extra-catalog {
-    width: 1220px; } }
+    width: 1220px; }
+  .extra-catalog__extra-goods-list-wrapper {
+    display: flex;
+    justify-content: space-between; } }
 
 .sub-header {
   position: relative;
@@ -1652,9 +1631,6 @@ template {
   border-bottom: 1px solid #e6e6e6; }
 
 @media (min-width: 1440px) {
-  .extra-catalog__extra-goods-list-wrapper {
-    display: flex;
-    justify-content: space-between; }
   .extra-goods-list {
     width: 895px;
     margin-left: 40px; } }
@@ -1822,13 +1798,13 @@ template {
   line-height: 18px;
   text-transform: uppercase; }
 
-.form__cat-info {
+.form .cat-info {
   padding: 0;
   border: none; }
 
-.form__contacts-info,
-.form__comment-info,
-.form__extra-questions {
+.form .contacts-info,
+.form .comment-info,
+.form .extra-questions {
   margin: 0 auto;
   padding: 0;
   border: none; }

@@ -22,14 +22,14 @@
   // outline: 1px solid rgb(35, 21, 232); //временно для сетки
 }
 
-.form__cat-info {
+.form .cat-info {
   padding: 0;
   border: none;
 }
 
-.form__contacts-info,
-.form__comment-info,
-.form__extra-questions  {
+.form .contacts-info,
+.form .comment-info,
+.form .extra-questions  {
   margin: 0 auto;
   padding: 0;
   border: none;

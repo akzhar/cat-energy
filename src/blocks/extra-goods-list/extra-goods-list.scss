@@ -10,11 +10,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extra-catalog__extra-goods-list-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .extra-goods-list {
   width: 895px;
   margin-left: 40px;

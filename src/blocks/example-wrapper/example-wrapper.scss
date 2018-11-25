@@ -7,9 +7,64 @@
   // outline: 1px solid rgb(232, 21, 119); //временно для сетки
 }
 
+.example {
+  width: 280px;
+  margin: 0 auto;
+
+  // background: rgba(117, 116, 115, 0.5); //временно для сетки
+  // outline: 1px solid rgb(117, 116, 115); //временно для сетки
+}
+
+.example__header {
+  width: 240px;
+  margin: 0 auto;
+  padding: 15px 0;
+
+  // background: rgba(104, 212, 104, 0.3); //временно для сетки
+  // outline: 1px solid rgb(104, 212, 104); //временно для сетки
+}
+
+.example__text {
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  // background: rgba(104, 212, 104, 0.3); //временно для сетки
+  // outline: 1px solid rgb(104, 212, 104); //временно для сетки
+}
+
+.example .slider {
+  margin-top: 50px;
+
+  // background: rgba(104, 212, 104, 0.3); //временно для сетки
+  // outline: 1px solid rgb(104, 212, 104); //временно для сетки
+}
+
 @media (min-width: $tablet-width) {
   .example-wrapper {
     width: $tablet-width;
+  }
+  .example {
+    width: 708px;
+  }
+
+  .example__header {
+    width: 708px;
+    padding: 40px 0;
+  }
+
+  .example__text {
+    width: 680px;
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example .slider {
+    position: relative;
+    width: 708px;
+    margin-top: 250px;
+    min-height: 430px;
   }
 }
 
@@ -18,5 +73,27 @@
     margin-top: 140px;
     width: $desktop-width;
   }
-}
+  .example {
+    position: relative;
+    width: 1220px;
+  }
 
+  .example__header {
+    position: absolute;
+    top: -140px;
+    width: 510px;
+  }
+
+  .example__text {
+    padding-top: 75px;
+    width: 420px;
+  }
+
+  .example .slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    z-index: 1;
+  }
+}

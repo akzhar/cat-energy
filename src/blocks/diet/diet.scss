@@ -6,9 +6,23 @@
   // outline: 1px solid rgb(82, 148, 235); //временно для сетки
 }
 
+.diet__list {
+  width: 280px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+
+  // background: rgba(104, 212, 104, 0.3); //временно для сетки
+  // outline: 1px solid rgb(104, 212, 104); //временно для сетки
+}
+
+
 @media (min-width: $tablet-width) {
   .diet {
     width: $tablet-width;
+  }
+  .diet__list {
+    width: 708px;
   }
 }
 
@@ -16,5 +30,11 @@
   .diet {
     margin-top: 80px;
     width: $desktop-width;
+  }
+  .diet__list {
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
