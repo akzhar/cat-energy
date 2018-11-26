@@ -3,7 +3,9 @@
   justify-content: space-between;
   align-items: center;
   width: 200px;
-  margin: 0 auto;
+
+  margin: 40px auto 0 auto;
+  padding-bottom: 35px;
 }
 
 .slider-checkbox-wrapper__label {
@@ -75,6 +77,8 @@
 @media (min-width: $tablet-width) {
   .slider-checkbox-wrapper {
     width: 570px;
+
+    padding-top: 370px;
   }
 
   .slider-checkbox-wrapper__input {
@@ -83,5 +87,11 @@
 
   .slider-checkbox-wrapper__range-controls {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-checkbox-wrapper {
+    padding-top: 330px;
   }
 }

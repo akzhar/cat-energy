@@ -1,5 +1,5 @@
 .contacts-info__header {
-  width: 205px;
+  // width: 205px;
   border-bottom: none;
 }
 
@@ -8,9 +8,9 @@
 }
 
 @media (min-width: $tablet-width) {
-.contacts-info__header {
-  width: 600px;
-}
+// .contacts-info__header {
+//   width: 600px;
+// }
 .contacts-info__text-input-wrapper {
     width: 628px;
     margin: 0 auto 15px auto;
