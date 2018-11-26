@@ -50,7 +50,7 @@
   // outline: 1px solid rgb(21, 95, 232); //временно для сетки
 }
 
-.adressblock-wrapper_adressblock__adress br {
+.adressblock-wrapper_adressblock__br {
   display: none;
 }
 
@@ -78,6 +78,10 @@
     text-align: right;
     padding: 100px 0;
     padding-right: 108px;
+  }
+
+  .adressblock-wrapper_adressblock__br {
+  display: block;
   }
 }
 
@@ -116,9 +120,5 @@
       padding: 60px 0;
       padding-right: 76px;
       text-align: left;
-    }
-
-    .adressblock-wrapper_adressblock__adress br {
-      display: block;
     }
 }

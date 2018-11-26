@@ -15,7 +15,7 @@
 }
 
 .extra-catalog__header {
-  width: 230px;
+  // width: 230px;
   margin: 0 auto;
 
   // background: rgba(232, 21, 225, 0.3); //временно для сетки
@@ -31,9 +31,9 @@
     width: 708px;
   }
 
-  .extra-catalog__header {
-    width: 410px;
-  }
+  // .extra-catalog__header {
+  //   width: 410px;
+  // }
 }
 
 @media (min-width: $desktop-width) {

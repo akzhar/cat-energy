@@ -18,34 +18,6 @@
   background-repeat: no-repeat;
 }
 
-.goods-item__img--1 {
-  background-image: url("../img/catalog-1-mobile.png");
-}
-
-.goods-item__img--2 {
-  background-image: url("../img/catalog-2-mobile.png");
-}
-
-.goods-item__img--3 {
-  background-image: url("../img/catalog-3-mobile.png");
-}
-
-.goods-item__img--4 {
-  background-image: url("../img/catalog-4-mobile.png");
-}
-
-.goods-item__img--5 {
-  background-image: url("../img/catalog-5-mobile.png");
-}
-
-.goods-item__img--6 {
-  background-image: url("../img/catalog-6-mobile.png");
-}
-
-.goods-item__img--7 {
-  background-image: url("../img/catalog-7-mobile.png");
-}
-
 .goods-description__order-button {
   margin: 0 auto;
   margin-bottom: 25px;
@@ -80,34 +52,6 @@
 
   .goods-item:nth-child(even) .goods-item__img {
     top: -78px;
-  }
-
-  .goods-item__img--1 {
-    background-image: url("../img/catalog-1-tablet.png");
-  }
-
-  .goods-item__img--2 {
-    background-image: url("../img/catalog-2-tablet.png");
-  }
-
-  .goods-item__img--3 {
-    background-image: url("../img/catalog-3-tablet.png");
-  }
-
-  .goods-item__img--4 {
-    background-image: url("../img/catalog-4-tablet.png");
-  }
-
-  .goods-item__img--5 {
-    background-image: url("../img/catalog-5-tablet.png");
-  }
-
-  .goods-item__img--6 {
-    background-image: url("../img/catalog-6-tablet.png");
-  }
-
-  .goods-item__img--7 {
-    background-image: url("../img/catalog-7-tablet.png");
   }
 }
 
