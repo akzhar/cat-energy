@@ -1,0 +1,62 @@
+.radio-item {
+  margin: 30px 0;
+
+  // background: rgba(232, 21, 186, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 21, 186); //временно для сетки
+}
+
+.radio-item__radio-input:focus + .radio-item__label::after {
+  border: 2px solid rgba(77, 144, 254, 0.6);
+}
+
+
+.radio-item__label {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: block;
+  padding-left: 48px;
+  width: 100%;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    content: "";
+    border-radius: 50%;
+  }
+
+  &::before {
+    width: 10px;
+    height: 10px;
+    border: 10px solid #ffffff;
+  }
+
+  &::after {
+    width: 28px;
+    height: 28px;
+    border: 1px solid $border;
+  }
+
+  &:hover::after {
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+  }
+
+  &:active::after {
+    width: 26px;
+    height: 26px;
+    border: 2px solid $green;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+  }
+
+}
+
+.radio-item__radio-input:checked + .radio-item__label::before {
+  background-color: $green;
+}

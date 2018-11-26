@@ -1,0 +1,31 @@
+.steps {
+  width: 280px;
+  margin: 0 auto;
+
+  // background: rgba(209, 148, 69, 0.3); //временно для сетки
+  // outline: 1px solid rgb(209, 148, 69); //временно для сетки
+}
+
+.steps__header {
+  margin: 0;
+  padding-bottom: 20px;
+
+  // background: rgba(21, 232, 53, 0.3); //временно для сетки
+  // outline: 1px solid rgb(21, 232, 53); //временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .steps {
+    width: 708px;
+  }
+
+  .steps__header {
+    padding: 30px 0 70px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps {
+    width: 1220px;
+  }
+}

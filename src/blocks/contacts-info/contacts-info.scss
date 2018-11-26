@@ -1,0 +1,32 @@
+.contacts-info__header {
+  width: 205px;
+  border-bottom: none;
+}
+
+.contacts-info__text-input-wrapper {
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+.contacts-info__header {
+  width: 600px;
+}
+.contacts-info__text-input-wrapper {
+    width: 628px;
+    margin: 0 auto 15px auto;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+.contacts-info__text-input-wrapper {
+    width: 570px;
+    margin: 0 0 15px 0;
+}
+
+.contacts-info__text-input-wrapper-outer {
+    display: flex;
+    justify-content: space-between;
+}
+
+}

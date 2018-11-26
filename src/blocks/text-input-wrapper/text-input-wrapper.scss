@@ -1,0 +1,78 @@
+.text-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.text-input-wrapper--mail,
+.text-input-wrapper--tel {
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 12px;
+    transform: translate(0, -50%);
+    background-repeat: no-repeat;
+  }
+
+}
+
+.text-input-wrapper--mail::after {
+  width: 17px;
+  height: 13px;
+  background-image: url("../img/sprites.png");
+  background-position: -231px -182px;
+}
+
+.text-input-wrapper--tel::after {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/sprites.png");
+  background-position: -267px -179px;
+}
+
+.text-input-wrapper__label {
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  // background: rgba(232, 21, 186, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 21, 186); //временно для сетки
+}
+
+.text-input-wrapper__text-input {
+  width: 100%;
+  padding: 14px 34px 14px 14px;
+  border: 1px solid $border;
+  text-transform: uppercase;
+
+  // background: rgba(232, 21, 186, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 21, 186); //временно для сетки
+
+  &::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: $inputactive;
+  }
+
+  &::-moz-placeholder {
+    text-transform: uppercase;
+    color: $inputactive;
+  }
+
+  &:hover {
+    border-color: $inputhover;
+  }
+
+  &:active {
+    border-color: $inputactive;
+  }
+
+}
+
+.text-input-wrapper__text-input--invalid {
+  border-color: #ff8282;
+}
+

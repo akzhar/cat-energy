@@ -1,0 +1,53 @@
+.comment-info__textarea {
+  resize: none;
+  width: 252px;
+  height: 150px;
+  padding: 14px;
+  text-transform: uppercase;
+  border-color: $border;
+
+  // background: rgba(232, 21, 186, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 21, 186); //временно для сетки
+
+    &::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: $inputactive;
+  }
+
+    &::-moz-placeholder {
+    text-transform: uppercase;
+    color: $inputactive;
+  }
+
+    &:hover {
+    border-color: $inputhover;
+  }
+
+    &:active {
+    border-color: $inputactive;
+  }
+
+}
+
+.comment-info__header {
+  width: 140px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment-info__textarea {
+    width: 600px;
+    margin-left: 40px;
+  }
+
+  .comment-info__header {
+  width: 260px;
+}
+
+}
+
+@media (min-width: $desktop-width) {
+  .comment-info__textarea {
+    width: 1192px;
+    margin-left: 0;
+  }
+}

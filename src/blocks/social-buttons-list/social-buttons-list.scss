@@ -1,0 +1,78 @@
+.social-buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 280px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid $border;
+
+  // min-height: 64px; //временно для сетки
+  // background: rgba(97, 82, 235, 0.3); //временно для сетки
+  // outline: 1px solid rgb(97, 82, 235); //временно для сетки
+}
+
+.social-button-item {
+  // background: rgba(194, 87, 87, 0.3); //временно для сетки
+  // outline: 1px solid rgb(194, 87, 87); //временно для сетки
+}
+
+.social-button-item__link {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link--vk {
+  background-image: url("../img/sprites.png");
+  background-position: -518px -70px;
+
+  &:hover {
+    background-image: url("../img/sprites.png");
+    background-position: -519px -143px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
+
+.link--in {
+  background-image: url("../img/sprites.png");
+  background-position: -520px -278px;
+
+  &:hover {
+    background-image: url("../img/sprites.png");
+    background-position: -591px -278px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
+
+.link--fb {
+  background-image: url("../img/sprites.png");
+  background-position: -520px -216px;
+
+  &:hover {
+    background-image: url("../img/sprites.png");
+    background-position: -590px -216px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .social-buttons-list {
+    border-bottom: none;
+  }
+}

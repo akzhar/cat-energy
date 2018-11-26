@@ -1,0 +1,107 @@
+.facts-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  // background: rgba(154, 612, 604, 0.3); //временно для сетки
+  // outline: 1px solid rgb(154, 612, 604); //временно для сетки
+}
+
+.facts-list-wrapper__facts-list {
+  // background: rgba(104, 212, 104, 0.3); //временно для сетки
+  // outline: 1px solid rgb(104, 212, 104); //временно для сетки
+}
+
+.facts-list-wrapper__cost-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  // background: rgba(104, 212, 104, 0.3); //временно для сетки
+  // outline: 1px solid rgb(104, 212, 104); //временно для сетки
+}
+
+.facts-list {
+  width: 280px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.fact-item {
+  position: relative;
+  width: 123px;
+  padding: 16px 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid $border;
+  text-align: center;
+
+  // background: rgba(232, 232, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 232, 21); //временно для сетки
+}
+
+.fact-item__description {
+  position: absolute;
+  width: 80px;
+  top: 48px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  background-color: $grey;
+}
+
+@media (min-width: $tablet-width) {
+  .facts-list-wrapper__cost-wrapper {
+    width: 175px;
+    margin: 7px 0;
+    margin-left: auto;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .facts-list-wrapper__cost {
+    display: block;
+    margin: 6px 0;
+  }
+  .facts-list {
+    width: 365px;
+  }
+  .fact-item {
+    width: 160px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .fact-item__description {
+    width: 140px;
+    top: 60px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .facts-list-wrapper {
+    width: 365px;
+  }
+
+  .facts-list-wrapper__cost-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+  }
+}

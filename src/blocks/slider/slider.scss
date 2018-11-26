@@ -1,0 +1,61 @@
+.slide {
+  width: 280px;
+  display: none;
+  position: relative;
+  background-position: center;
+  min-height: 230px;
+  background-repeat: no-repeat;
+
+  // background: rgba(232, 232, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(232, 232, 21); //временно для сетки
+}
+
+.slide--active {
+  display: block;
+}
+
+.slide-before {
+  background-image: url("../img/before-mobile.png");
+}
+
+.slide-after {
+  background-image: url("../img/after-mobile.png");
+}
+
+.slider__slider-checkbox-wrapper {
+  margin-top: 40px;
+  padding-bottom: 35px;
+
+  // background: rgba(32, 232, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(32, 232, 21); //временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .slide {
+    display: block;
+    width: 354px;
+    position: absolute;
+    top: - 180px;
+    min-height: 610px;
+  }
+
+  .slide-before {
+    left: 0;
+    background-image: url("../img/before-desktop.png");
+  }
+
+  .slide-after {
+    right: 0;
+    background-image: url("../img/after-desktop.png");
+  }
+
+  .slider__slider-checkbox-wrapper {
+    padding-top: 370px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slide {
+    top: - 200px;
+  }
+}

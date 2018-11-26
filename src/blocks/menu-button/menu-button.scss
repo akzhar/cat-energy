@@ -1,0 +1,68 @@
+.menu-button { //кнопка открытия меню
+  position: relative;
+
+  width: 24px; //размеры кнопки открытия меню
+  height: 24px;
+
+  border: none;
+
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(198, 210, 222, 0.3));
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::before, //иконка бургера
+  &::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); //центруется
+
+    width: 24px; //размеры полосок бургера
+    height: 3px;
+
+    background-color: #000000;
+
+    content: "";
+  }
+
+  &::before { //верхняя полоска бургера
+    top: 0; //отступ сверху
+    box-shadow: 0px 11px 0px 0px #000000; //3ая средняя полоска бургера
+  }
+
+  &::after { //нижняя полоска бургера
+    bottom: 0; //отступ снизу
+  }
+}
+
+.menu-button--menu-open { //кнопка открытия меню когда меню открыто
+
+  &::before { //верхняя полоска бургера
+    top: 10px; //смещается вниз
+    transform: translate(-50%, 0) rotate(-45deg); //центруется и поворачивается
+
+    transition: 0.5s; //плавно
+
+    box-shadow: none; //3ая средняя полоска исчезает
+  }
+
+  &::after { //нижняя полоска бургера
+    bottom: 10px; //смещается вверх
+    transform: translate(-50%, 0) rotate(45deg); //центруется и поворачивается
+
+    transition: 0.5s; //плавно
+  }
+}
+
+
+@media (min-width: $tablet-width) { //если viewport шире width-1
+  .menu-button {
+    display: none;
+  }
+}

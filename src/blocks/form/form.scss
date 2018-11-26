@@ -1,0 +1,60 @@
+.form {
+  width: 280px;
+  margin: 0 auto;
+
+  // background: rgba(152, 183, 21, 0.3); //временно для сетки
+  // outline: 1px solid rgb(152, 183, 21); //временно для сетки
+}
+
+.form__header {
+  margin: 0 auto;
+  // background: rgba(35, 21, 232, 0.3); //временно для сетки
+  // outline: 1px solid rgb(35, 21, 232); //временно для сетки
+}
+
+.form__description {
+  margin: 20px auto 40px auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  // background: rgba(35, 21, 232, 0.3); //временно для сетки
+  // outline: 1px solid rgb(35, 21, 232); //временно для сетки
+}
+
+.form .cat-info {
+  padding: 0;
+  border: none;
+}
+
+.form .contacts-info,
+.form .comment-info,
+.form .extra-questions  {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+
+  // background: rgba(35, 21, 232, 0.3); //временно для сетки
+  // outline: 1px solid rgb(35, 21, 232); //временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 708px;
+  }
+  .form__description {
+    width: 340px;
+    margin: 50px auto 70px 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 1220px;
+  }
+  .form__description {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,111 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Oswald";
+  font-style: normal;
+  src: url("../fonts/Oswald-Regular.woff2") format("woff2"),
+  url("../fonts/Oswald-Regular.woff") format("woff");
+}
+
+.body {
+  font-family: 'Oswald', Arial, sans-serif;
+}
+
+@import "normalize/normalize.min.scss";
+
+@import "var/var.scss";
+
+@import "visually-hidden/visually-hidden.scss";
+
+@import "button/button.scss";
+
+@import "text/text.scss";
+
+@import "menu-list/menu-list.scss";
+
+@import "site-header/site-header.scss";
+
+@import "logo-link/logo-link.scss";
+
+@import "shop-name/shop-name.scss";
+
+@import "menu-button/menu-button.scss";
+
+@import "promotion/promotion.scss";
+
+@import "promo-header/promo-header.scss";
+
+@import "diet/diet.scss";
+
+@import "diet-item/diet-item.scss";
+
+@import "explanation/explanation.scss";
+
+@import "section-header/section-header.scss";
+
+@import "steps/steps.scss";
+
+@import "steps-list/steps-list.scss";
+
+@import "example-wrapper/example-wrapper.scss";
+
+@import "facts-list-wrapper/facts-list-wrapper.scss";
+
+@import "slider/slider.scss";
+
+@import "slider-checkbox-wrapper/slider-checkbox-wrapper.scss";
+
+@import "range-controls/range-controls.scss";
+
+@import "contacts/contacts.scss";
+
+@import "adressblock/adressblock.scss";
+
+@import "site-footer/site-footer.scss";
+
+@import "social-block/social-block.scss";
+
+@import "social-buttons-list/social-buttons-list.scss";
+
+@import "copyright/copyright.scss";
+
+@import "main-catalog-wrapper/main-catalog-wrapper.scss";
+
+@import "goods-list/goods-list.scss";
+
+@import "goods-description/goods-description.scss";
+
+@import "description-table/description-table.scss";
+
+@import "extra-goods/extra-goods.scss";
+
+@import "extra-catalog-wrapper/extra-catalog-wrapper.scss";
+
+@import "sub-header/sub-header.scss";
+
+@import "extra-goods-list/extra-goods-list.scss";
+
+@import "extra-goods-item/extra-goods-item.scss";
+
+@import "extra-description-table/extra-description-table.scss";
+
+@import "stock/stock.scss";
+
+@import "form-wrapper/form-wrapper.scss";
+
+@import "form/form.scss";
+
+@import "cat-info/cat-info.scss";
+
+@import "text-input-wrapper/text-input-wrapper.scss";
+
+@import "radio-item/radio-item.scss";
+
+@import "contacts-info/contacts-info.scss";
+
+@import "comment-info/comment-info.scss";
+
+@import "checkbox-wrapper/checkbox-wrapper.scss";
+
+@import "button-wrapper/button-wrapper.scss";
+
+@import "extra-questions/extra-questions.scss";
