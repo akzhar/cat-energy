@@ -11,11 +11,12 @@
 
 .range-controls__range-toggle {
   position: absolute;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   top: -7px;
+  left: 50%;
   width: 4px;
   height: 4px;
+  transform: translate(-50%, 0);
   background-color: $green;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -26,9 +27,4 @@
     cursor: pointer;
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
   }
-}
-
-.range-controls__range-toggle {
-  left: 50%;
-  transform: translate(-50%, 0);
 }
